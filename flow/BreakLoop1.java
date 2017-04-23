@@ -1,6 +1,6 @@
 package flow;
 
-public class BreakLoop {
+public class BreakLoop1 {
     public static void main(String args[]) {
         int i = 0;
 
