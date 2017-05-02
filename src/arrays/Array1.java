@@ -2,20 +2,19 @@ package arrays;
 
 public class Array1 {
     public static void main(String[] args) {
-        int[] month_days;
-        month_days = new int[12];
-        month_days[0] = 31;
-        month_days[1] = 28;
-        month_days[2] = 31;
-        month_days[3] = 30;
-        month_days[4] = 31;
-        month_days[5] = 30;
-        month_days[6] = 31;
-        month_days[7] = 31;
-        month_days[8] = 30;
-        month_days[9] = 31;
-        month_days[10] = 30;
-        month_days[11] = 31;
-        System.out.println("B апреле " + month_days[3] + " дней.");
+        int[] monthDays = new int[12];
+        monthDays[0] = 31;
+        monthDays[1] = 28;
+        monthDays[2] = 31;
+        monthDays[3] = 30;
+        monthDays[4] = 31;
+        monthDays[5] = 30;
+        monthDays[6] = 31;
+        monthDays[7] = 31;
+        monthDays[8] = 30;
+        monthDays[9] = 31;
+        monthDays[10] = 30;
+        monthDays[11] = 31;
+        System.out.println("B апреле " + monthDays[3] + " дней.");
     }
 }
