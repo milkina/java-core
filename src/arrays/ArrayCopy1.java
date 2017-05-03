@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 public class ArrayCopy1 {
     public static void main(String[] args) {
-        int[] array0 = {1, 2, 3, 4, 5, 6};
-        int[] array1 = {0, 0, 0, 0, 0, 0, 0, 0};
+        int[] arraySource = {1, 2, 3, 4, 5, 6};
+        int[] arrayDestination = {0, 0, 0, 0, 0, 0, 0, 0};
 
-        System.out.println("array0: " + Arrays.toString(array0));
-        System.out.println("array1: " + Arrays.toString(array1));
+        System.out.println("arraySource: " + Arrays.toString(arraySource));
+        System.out.println("arrayDestination: " + Arrays.toString(arrayDestination));
 
-        System.arraycopy(array0, 1, array1, 2, 3);
-        System.out.println("array1: " + Arrays.toString(array1));
+        System.arraycopy(arraySource, 1, arrayDestination, 2, 3);
+        System.out.println("arrayDestination: " + Arrays.toString(arrayDestination));
     }
 }
