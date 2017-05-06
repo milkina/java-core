@@ -12,7 +12,7 @@ public class SelectionSorter {
                 }
             }
             array[k] = array[i];
-            array[i] = x;    // меняем местами наименьший с a[i]
+            array[i] = x;    // меняем местами наименьший с array[i]
         }
     }
 }
