@@ -1,6 +1,5 @@
 package inheritance;
 
-
 public class D extends C {
     public String i;
 

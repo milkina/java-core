@@ -1,7 +1,10 @@
 package inheritance;
 
+import oop.HeavyBox;
+
 public class S extends R {
-    S getInstance() {
-        return new S();
+    @Override
+    HeavyBox getInstance() {
+        return new HeavyBox();
     }
 }

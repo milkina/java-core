@@ -1,6 +1,8 @@
 package oop;
 
-/* В этом примере класс Вох определяет три конструктора для инициализации размеров параллелепипеда различными способами. */
+/**
+ * В этом примере класс Вох определяет три конструктора для инициализации размеров параллелепипеда различными способами.
+ */
 
 public class Box6 {
     double width;
@@ -15,7 +17,7 @@ public class Box6 {
     }
 
     // constructor used when no dimensions specified
-    Box6() {
+    public Box6() {
         width = -1;  // use -1 to indicate
         height = -1; // an uninitialized
         depth = -1;  // box

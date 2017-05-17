@@ -9,4 +9,7 @@ public class ColorBox extends Box6 {
         this.depth = depth;
         this.color = color; // цвет
     }
+
+    public ColorBox() {
+    }
 }
