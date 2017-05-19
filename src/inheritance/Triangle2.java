@@ -1,15 +1,13 @@
 package inheritance;
 
 public class Triangle2 extends Figure2 {
-    private String figureName;
-
     public Triangle2(double dim1, double dim2) {
         super(dim1, dim2);
-        figureName = "треугольник";
+        this.setFigureName("треугольник");
     }
 
     public double area() {
-        System.out.println("Текущая фигура - " + figureName);
+        System.out.println("Текущая фигура - " + this.getFigureName());
         return dim1 * dim2 / 2;
     }
 }
