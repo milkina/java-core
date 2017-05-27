@@ -1,6 +1,6 @@
 package generics;
 
-class TwoGen<T, V> {
+public class TwoGen<T, V> {
     T ob1;
     V ob2;
 

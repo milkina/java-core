@@ -3,6 +3,7 @@ package wrappers;
 public class AddBoxing {
     static void go(Integer x) {
         System.out.println("Integer");
+
     }
 
     static void go(long x) {
