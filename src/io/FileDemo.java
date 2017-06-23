@@ -8,7 +8,7 @@ public class FileDemo {
     }
 
     public static void main(String args[]) {
-        File f1 = new File("src/text.properties");
+        File f1 = new File("src/io");
 
         p("File Name: " + f1.getName());
         p("Path: " + f1.getPath());
