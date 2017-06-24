@@ -29,6 +29,7 @@ public class AccountDanger implements Runnable {
             try {
                 Thread.sleep(500);
             } catch (InterruptedException ex) {
+                ex.printStackTrace();
             }
             acct.withdraw(amt);
             System.out.println(Thread.currentThread().getName()
