@@ -2,7 +2,6 @@ package formatter;
 
 import java.text.DateFormat;
 import java.util.Date;
-import java.util.Locale;
 
 public class DateFormatDemo1 {
     public static void main(String[] args) {
