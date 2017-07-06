@@ -6,7 +6,7 @@ public class Average {
         double result = 0;
 
         for (double d : nums) {
-            result = result + d;
+            result += d;
         }
         System.out.println("Average is " + result / nums.length);
     }
