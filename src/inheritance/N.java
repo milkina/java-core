@@ -12,4 +12,8 @@ public class N extends M {
         System.out.println("Print in N");
         System.out.println("k = " + k);
     }
+
+    public void someMethod(){
+        print();
+    }
 }
