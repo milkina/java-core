@@ -1,14 +1,12 @@
 package jdbc;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO extends AbstractDAO<Integer, User> {
     public static final String SQL_SELECT_ALL_USERS = "SELECT * FROM users";
+    public static final String SQL_SELECT_USER_ID = "SELECT * FROM users WHERE id=?";
 
     @Override
     public List<User> findAll() {
@@ -21,8 +19,6 @@ public class UserDAO extends AbstractDAO<Integer, User> {
                 String name = rs.getString(2);
                 users.add(new User(id, name));
             }
-            statement.close();
-            connection.close();
         } catch (SQLException e) {
             System.err.println("SQL Exeption (request or table failed):" + e);
         }
@@ -30,12 +26,25 @@ public class UserDAO extends AbstractDAO<Integer, User> {
     }
 
     @Override
-    public User findEntityById(Integer Id) {
-        throw new UnsupportedOperationException();
+    public User findEntityById(Integer id) {
+        User user = null;
+        try (Connection connection = ConnectorDB.getConnection();
+             PreparedStatement statement = connection.prepareStatement(SQL_SELECT_USER_ID)) {
+            statement.setInt(1, id);
+            ResultSet rs = statement.executeQuery();
+            if (rs.next()) {
+                id = rs.getInt(1);
+                String name = rs.getString(2);
+                user = new User(id, name);
+            }
+        } catch (SQLException e) {
+            System.err.println("SQL Exeption (request or table failed):" + e);
+        }
+        return user;
     }
 
     @Override
-    public boolean delete(Integer Id) {
+    public boolean delete(Integer id) {
         throw new UnsupportedOperationException();
     }
 
