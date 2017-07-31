@@ -11,8 +11,8 @@ public class RegexDemo3 {
     }
 
     public static boolean test(String testString) {
-        Pattern p = Pattern.compile(".+\\.(com|ua|ru)");
-        Matcher m = p.matcher(testString);
-        return m.matches();
+        Pattern pattern = Pattern.compile(".+\\.(com|ua|ru)");
+        Matcher matcher = pattern.matcher(testString);
+        return matcher.matches();
     }
 }

@@ -1,10 +1,7 @@
 package strings;
 
-import java.util.Date;
-
 public class FormatterDemo3 {
     public static void main(String[] args) {
-        System.out.printf("%1$s %2$tB %2$td, %2$tY\n", "Дата:", new Date());
-        System.out.printf("%s %tB %<td, %<tY", "Дата:", new Date());
+        System.out.printf("Hello %1$s!\n%1$s, how are you?\nWelcome to the site %2$s", "John", "www.site.com");
     }
 }
