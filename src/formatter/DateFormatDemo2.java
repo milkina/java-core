@@ -6,14 +6,16 @@ import java.util.Date;
 
 public class DateFormatDemo2 {
     public static void main(String[] args) {
-        Date d1 = new Date(1000000000000L);
-        System.out.println("d1 = " + d1.toString());
+        Date date1 = new Date(1000000000000L);
+        System.out.println("date1 = " + date1);
+
         DateFormat df = DateFormat.getDateInstance(DateFormat.SHORT);
-        String s = df.format(d1);
+        String s = df.format(date1);
+
         System.out.println(s);
         try {
-            Date d2 = df.parse(s);
-            System.out.println("parsed = " + d2.toString());
+            Date date2 = df.parse(s);
+            System.out.println("parsed = " + date2);
         } catch (ParseException pe) {
             System.out.println("parse exc");
         }
