@@ -49,4 +49,26 @@ public class Person implements Comparable<Person> {
                 ", age=" + age +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Person person = (Person) o;
+
+        if (getAge() != person.getAge()) return false;
+        if (getFirstName() != null ? !getFirstName().equals(person.getFirstName()) : person.getFirstName() != null)
+            return false;
+        return getLastName() != null ? getLastName().equals(person.getLastName()) : person.getLastName() == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = getFirstName() != null ? getFirstName().hashCode() : 0;
+        result = 31 * result + (getLastName() != null ? getLastName().hashCode() : 0);
+        result = 31 * result + getAge();
+        return result;
+    }
 }

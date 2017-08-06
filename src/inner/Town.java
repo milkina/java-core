@@ -19,8 +19,8 @@ public class Town {
     public static void main(String[] args) {
         Town town = new Town();
         town.createStreet();
-        Street street1 = town.new Street();
-        Street street2 = new Town().new Street();
+        Town.Street street1 = town.new Street();
+        Town.Street street2 = new Town().new Street();
         street1.printAddress();
         street2.printAddress();
     }

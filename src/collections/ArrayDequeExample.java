@@ -6,7 +6,7 @@ import java.util.Deque;
 public class ArrayDequeExample {
     public static void main(String args[]) {
         Deque<String> stack = new ArrayDeque<String>();
-        Deque<String> queue = new ArrayDeque<String>();
+        Deque<String> queue = new ArrayDeque<String>(2);
         stack.push("A");
         stack.push("B");
         stack.push("C");

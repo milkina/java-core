@@ -12,7 +12,7 @@ public class QueueExample {
         queue.offer("Georgia");
         queue.offer("Texas");
         while (queue.size() > 0) {
-            System.out.print(queue.remove() + " ");
+            System.out.print(queue.poll() + " ");
         }
     }
 }
