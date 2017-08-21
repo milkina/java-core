@@ -14,9 +14,9 @@ public class Ferry {
         times.add(2010);
         times.add(2100);
         // Java 5 version
-        SortedSet<Integer> subset = (SortedSet) times.headSet(1600);
+        SortedSet<Integer> subset = times.headSet(1600);
         System.out.println("J5 - last before 4pm is: " + subset.last());
-        SortedSet<Integer> sub2 = (SortedSet) times.tailSet(2000);
+        SortedSet<Integer> sub2 =  times.tailSet(2000);
         System.out.println("J5 - first after 8pm is: " + sub2.first());
 
         // Java 6 version using the new lower() and higher() methods
