@@ -6,8 +6,8 @@ public class IncrementDecrement {
         int b = a++;
         int c = ++a;
         c++;
-        System.out.println(a);
-        System.out.println(b);
-        System.out.println(c);
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        System.out.println("c = " + c);
     }
 }

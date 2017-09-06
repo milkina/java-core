@@ -1,6 +1,9 @@
 package lesson2;
 
 public class VarDemo {
+    String str1 = "Hello!";
+    String str2 = "Hi!";
+
     public static void main(String[] args) {
         int x; // переменная x доступна всему коду из метода main ( )
         x = 10;

@@ -6,7 +6,7 @@ public class SystemInDemo {
         try {
             x = System.in.read();
             char c = (char) x;
-            System.out.println("Код символа: " + c + " =" + x);
+            System.out.println("Код символа: " + c + " = " + x);
         } catch (java.io.IOException e) {
             System.err.println("ошибка ввода " + e);
         }
