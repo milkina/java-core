@@ -2,7 +2,6 @@ package threads;
 
 public class SleepRunnableDemo {
     public static void main(String[] args) {
-        // Make one Runnable
         SleepRunnable sleepRunnable = new SleepRunnable();
 
         Thread one = new Thread(sleepRunnable);

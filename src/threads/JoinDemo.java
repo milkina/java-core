@@ -10,7 +10,7 @@ public class JoinDemo {
         try {
             a.join();
         } catch (InterruptedException e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
         b.start();
         c.start();

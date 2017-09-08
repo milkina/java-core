@@ -4,11 +4,11 @@ public class IsAliveDemo {
     public static void main(String[] args) throws InterruptedException {
         MyRunnable myRunnable = new MyRunnable();
 
-        Thread thread1 = new Thread(myRunnable);
-        System.out.println("Before starting: " + thread1.isAlive());
-        thread1.start();
-        System.out.println("After starting: " + thread1.isAlive());
-        thread1.join();
-        System.out.println("After thread completed: " + thread1.isAlive());
+        Thread thread = new Thread(myRunnable);
+        System.out.println("Before starting: " + thread.isAlive());
+        thread.start();
+        System.out.println("After starting: " + thread.isAlive());
+        thread.join();
+        System.out.println("After thread completed: " + thread.isAlive());
     }
 }
