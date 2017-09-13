@@ -10,9 +10,9 @@ public class ArrayInverterTest2 {
         testInvert(new int[]{0, 1, 2, 3, 4});
     }
 
-    private static void testInvert(int[] arr) {
-        System.out.print(Arrays.toString(arr) + " => ");
-        ArrayInverter.invert(arr);
-        System.out.println(Arrays.toString(arr));
+    private static void testInvert(int[] array) {
+        System.out.print(Arrays.toString(array) + " => ");
+        ArrayInverter.invert(array);
+        System.out.println(Arrays.toString(array));
     }
 }

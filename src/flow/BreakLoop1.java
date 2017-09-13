@@ -2,9 +2,9 @@ package flow;
 
 public class BreakLoop1 {
     public static void main(String args[]) {
-        int i = 0;
+        int i = 0, n = 100;
 
-        while (i < 100) {
+        while (i < n) {
             if (i == 10) {
                 break;
             }
