@@ -1,5 +1,8 @@
 package arrays;
 
+/**
+ * Created by Tatyana on 13.09.2017.
+ */
 public class Array1 {
     public static void main(String[] args) {
         int[] monthDays = new int[12];

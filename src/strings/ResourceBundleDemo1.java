@@ -1,7 +1,6 @@
 package strings;
 
 import java.io.UnsupportedEncodingException;
-import java.util.Arrays;
 import java.util.Locale;
 import java.util.ResourceBundle;
 

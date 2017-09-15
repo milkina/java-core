@@ -59,4 +59,12 @@ public class Person {
         return getFullName() != null ? getFullName().equals(person.getFullName()) : person.getFullName() == null;
 
     }
+
+    @Override
+    public int hashCode() {
+        int result = getFullName() != null ? getFullName().hashCode() : 0;
+        result = 31 * result + getAge();
+        result = 31 * result + (isRetired() ? 1 : 0);
+        return result;
+    }
 }

@@ -1,8 +1,8 @@
 package threads;
 
 public class MyQueue {
-    int n;
-   // boolean valueSet = false;
+    private int n;
+    // boolean valueSet = false;
 
     public synchronized int get() {
         /*while (!valueSet) {
@@ -29,6 +29,6 @@ public class MyQueue {
         valueSet = true;*/
         this.n = n;
         System.out.println("Oтпpaвлeнo: " + n);
-    //    notify();
+        //    notify();
     }
 }
