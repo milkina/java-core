@@ -11,6 +11,6 @@ public class ArrayCopy1 {
         System.out.println("arrayDestination: " + Arrays.toString(arrayDestination));
 
         System.arraycopy(arraySource, 1, arrayDestination, 2, 3);
-        System.out.println("arrayDestination: " + Arrays.toString(arrayDestination));
+        System.out.println("arrayDestination after arrayCopy: " + Arrays.toString(arrayDestination));
     }
 }
