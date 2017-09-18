@@ -15,10 +15,10 @@ public class RetrieveData {
              Statement statement = connection.createStatement()) {
 
             ResultSet resultSet = statement.executeQuery(selectQuery);
-            System.out.printf("%-20s%s\n", "user_id", "username");
+            System.out.printf("%-20s%s\n", "id", "username");
             System.out.println("-------------------------------");
             while (resultSet.next()) {
-                int id = resultSet.getInt("user_id");
+                int id = resultSet.getInt("id");
                 String name = resultSet.getString("username");
                 System.out.printf("%-20d%s\n", id, name);
             }

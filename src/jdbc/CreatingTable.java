@@ -9,9 +9,9 @@ import static jdbc.ConnectionData.*;
 public class CreatingTable {
     private final static String createTableQuery =
                     "CREATE TABLE `users` " +
-                    "(`user_id` INT(5) NOT NULL AUTO_INCREMENT," +
+                    "(`id` INT(5) NOT NULL AUTO_INCREMENT," +
                     " `username` VARCHAR(50), " +
-                    "PRIMARY KEY(`user_id`));";
+                    "PRIMARY KEY(`id`));";
 
     public static void main(String[] args)throws ClassNotFoundException {
         Class.forName(DRIVER);
