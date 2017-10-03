@@ -20,7 +20,7 @@ public class VarArgs3 {
     }
 
     public static void main(String[] args) {
-        //  test(); ошибка неоднозначности
+        //  test();// ошибка неоднозначности
         test(3);
         test(1, 2);
     }

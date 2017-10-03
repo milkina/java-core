@@ -1,9 +1,6 @@
 package oop;
 
 public class VarArgs {
-    static void test(double d, int... array) {
-    }
-
     static void test(int... array) {
         System.out.println("Количество аргументов: " + array.length);
         for (int a : array) {

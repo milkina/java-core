@@ -1,9 +1,9 @@
 package oop;
 
 public class Test4 {
-    int a; // default access
     public int b; // public access
     private int c; // private access
+    int a; // default access
 
     // methods to access c
     void setC(int i) { // set c's value
@@ -12,5 +12,14 @@ public class Test4 {
 
     int getC() { // get c's value
         return c;
+    }
+
+    @Override
+    public String toString() {
+        return "Test4{" +
+                "b=" + b +
+                ", c=" + c +
+                ", a=" + a +
+                '}';
     }
 }
