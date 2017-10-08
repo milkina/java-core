@@ -8,8 +8,7 @@ public class BreakLoop1 {
             if (i == 10) {
                 break;
             }
-            System.out.println("i: " + i);
-            i++;
+            System.out.println("i: " + i++);
         }
         System.out.println("Loop complete.");
     }

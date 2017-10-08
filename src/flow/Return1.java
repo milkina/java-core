@@ -5,7 +5,7 @@ public class Return1 {
         boolean t = true;
         System.out.println("Дo возврата.");
         if (t) {
-            return; // возврат ввызывающий код
+            return; // возврат в вызывающий код
         }
         System.out.println("Этoт оператор выполняться не будет.");
     }
