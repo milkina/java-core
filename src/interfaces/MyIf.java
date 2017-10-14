@@ -3,11 +3,11 @@ package interfaces;
 public interface MyIf {
     int getNumber();
 
-    default String getString() {
+    default String defaultMethod() {
         return "Объект типа String по умолчанию";
     }
 
-    static int getDefaultNumber() {
+    static int staticMethod() {
         return 0;
     }
 }

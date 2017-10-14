@@ -1,4 +1,8 @@
-package oop;
+package casting;
+
+import oop.Box6;
+import oop.ColorBox;
+import oop.HeavyBox1;
 
 public class CastingDemo2 {
     public static void main(String[] args) {

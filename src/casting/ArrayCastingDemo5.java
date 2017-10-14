@@ -8,6 +8,6 @@ public class ArrayCastingDemo5 {
         Box6[] boxArray = new Box6[5];
         HeavyBox1[] heavyBoxArray = new HeavyBox1[6];
         boxArray = heavyBoxArray;
-      //  heavyBoxArray = (HeavyBox1[]) boxArray;
+        //heavyBoxArray = (HeavyBox1[]) boxArray;
     }
 }

@@ -7,7 +7,7 @@ public class MyIfImp2 implements MyIf {
     }
 
     @Override
-    public String getString() {
+    public String defaultMethod() {
         return "Другая символьная строка";
     }
 }
