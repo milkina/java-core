@@ -11,8 +11,8 @@ public class Coffee2 {
         drink2.size = CoffeeSize2.OVERWHELMING;
 
         System.out.println(drink1.size.getOunces());
-        for (CoffeeSize2 cs : CoffeeSize2.values()) {
-            System.out.println(cs + " " + cs.getOunces());
+        for (CoffeeSize2 coffeeSize : CoffeeSize2.values()) {
+            System.out.println(coffeeSize + " " + coffeeSize.getOunces());
         }
     }
 }
