@@ -5,7 +5,6 @@ public class BoxDemo8 {
         Box3 myBox1 = new Box3(10, 20, 15);
         Box3 myBox2 = new Box3(3, 6, 9);
         //Box3 myBox3 = new Box3();//Не можем использовать конструктор по умолчанию
-
         System.out.println("Volume is " + myBox1.volume());
         System.out.println("Volume is " + myBox2.volume());
     }
