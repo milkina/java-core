@@ -1,7 +1,7 @@
 package oop;
 
 public class HeavyBox extends Box6 {
-    int weight; // вес коробки
+    private int weight; // вес коробки
 
     public HeavyBox() {
     }
@@ -10,6 +10,14 @@ public class HeavyBox extends Box6 {
         this.width = width;
         this.height = height;
         this.depth = depth;
+        this.weight = weight;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
         this.weight = weight;
     }
 }
