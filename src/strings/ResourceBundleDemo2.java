@@ -11,11 +11,11 @@ public class ResourceBundleDemo2 {
     public static void main(String[] args) throws UnsupportedEncodingException {
         printInfo("", "");
 
-        printInfo("US", "EN");
-        printInfo("UA", "UK");
+        printInfo("en", "US");
+        printInfo("uk", "UA");
     }
 
-    private static void printInfo(String country, String language) throws UnsupportedEncodingException {
+    private static void printInfo(String language, String country) throws UnsupportedEncodingException {
         Locale current = new Locale(language, country);
         ResourceBundle rb = ResourceBundle.getBundle("text", current);
         for (String key : rb.keySet()) {

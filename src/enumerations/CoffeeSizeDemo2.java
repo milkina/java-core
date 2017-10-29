@@ -4,18 +4,15 @@ public class CoffeeSizeDemo2 {
     public static void main(String[] args) {
         CoffeeSize coffeeSize = CoffeeSize.BIG;
         switch (coffeeSize) {
-            case BIG: {
+            case BIG:
                 System.out.println("Give me a big cup of coffee!");
                 break;
-            }
-            case HUGE: {
+            case HUGE:
                 System.out.println("Give me a huge cup of coffee!");
                 break;
-            }
-            case OVERWHELMING: {
+            case OVERWHELMING:
                 System.out.println("Give me an overwhelming cup of coffee!");
                 break;
-            }
         }
     }
 }

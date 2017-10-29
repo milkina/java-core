@@ -8,9 +8,9 @@ public class DateFormatDemo3 {
     public static void main(String[] args) {
         Date date = new Date();
         Locale[] locales = DateFormat.getAvailableLocales();
-        for (Locale loc : locales) {
-            DateFormat df = DateFormat.getDateInstance(DateFormat.FULL, loc);
-            System.out.println(loc.toString() + "---> " + df.format(date));
+        for (Locale locale : locales) {
+            DateFormat df = DateFormat.getDateInstance(DateFormat.FULL, locale);
+            System.out.println(locale + "---> " + df.format(date));
         }
     }
 }
