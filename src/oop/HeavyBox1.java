@@ -9,7 +9,6 @@ public class HeavyBox1 extends Box6 {
     }
 
     public HeavyBox1() {
-        super();
         this.weight = -1;
     }
 }
