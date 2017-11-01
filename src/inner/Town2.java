@@ -1,6 +1,5 @@
 package inner;
 
-
 public class Town2 {
     private String postCode = "33333";
 

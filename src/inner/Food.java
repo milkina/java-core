@@ -3,16 +3,16 @@ package inner;
 public class Food {
     Potato p = new Potato() {
         public void fry() {
-            System.out.println("frying potato anonymously ");
+            System.out.println("Frying potato anonymously.");
         }
 
         public void peel() {
-            System.out.println("peeling potato anonymously");
+            System.out.println("Peeling potato anonymously.");
         }
     };
 
     public void prepare() {
         p.peel();
-      //  p.fry(); //compilation failure
+        //  p.fry(); //compilation failure
     }
 }

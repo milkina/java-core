@@ -3,7 +3,7 @@ package inner;
 public class City {
     static class District {
         void go() {
-            System.out.println("Go to the District");
+            System.out.println("Go to the District.");
         }
     }
 
