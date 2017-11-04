@@ -17,6 +17,9 @@ public class TreeSetDemo2 {
         System.out.println(treeSet);
 
         SortedSet subSet = treeSet.subSet("Бета", "Омeгa");
-        System.out.println(subSet);
+        System.out.println("SubSet: " + subSet);
+
+        System.out.println("HeadSet: " + treeSet.headSet("Гaммa"));
+        System.out.println("TailSet: " + treeSet.tailSet("Гaммa"));
     }
 }
