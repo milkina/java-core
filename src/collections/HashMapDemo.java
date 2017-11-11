@@ -14,7 +14,7 @@ public class HashMapDemo {
         hm.put("Tom Smith", 123.22);
         hm.put("Jane Baker", 1378.00);
         hm.put("Tod Hall", 99.22);
-        hm.put("Ralph Smith", -19.08);
+        hm.put("Ralph Smith", 99.22);
 
         // Get a set of the entries.
         Set<Map.Entry<String, Double>> set = hm.entrySet();

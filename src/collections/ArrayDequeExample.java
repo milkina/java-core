@@ -5,8 +5,8 @@ import java.util.Deque;
 
 public class ArrayDequeExample {
     public static void main(String args[]) {
-        Deque<String> stack = new ArrayDeque<String>();
-        Deque<String> queue = new ArrayDeque<String>(2);
+        Deque<String> stack = new ArrayDeque<>();
+        Deque<String> queue = new ArrayDeque<>(2);
         stack.push("A");
         stack.push("B");
         stack.push("C");
