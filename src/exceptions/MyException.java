@@ -3,7 +3,8 @@ package exceptions;
 public class MyException extends Exception {
     private int detail;
 
-    public MyException(int detail) {
+    public MyException(int detail, String message) {
+        super(message);
         this.detail = detail;
     }
 
@@ -11,6 +12,7 @@ public class MyException extends Exception {
     public String toString() {
         return "MyException{" +
                 "detail=" + detail +
-                '}';
+                ", message=" + getMessage() +
+                "} ";
     }
 }

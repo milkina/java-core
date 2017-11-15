@@ -13,21 +13,17 @@ public class ScannerExample {
              Scanner scan = new Scanner(fr);) {
             while (scan.hasNext()) {
                 if (scan.hasNextInt()) {
-                    System.out.println(scan.nextInt() + ":int");
+                    System.out.println(scan.nextInt() + " :int");
+                } else if (scan.hasNextDouble()) {
+                    System.out.println(scan.nextDouble() + " :double");
+                } else if (scan.hasNextBoolean()) {
+                    System.out.println(scan.nextBoolean() + " :boolean");
                 } else {
-                    if (scan.hasNextDouble())
-                        System.out.println(scan.nextDouble() + ":double");
-                    else {
-                        if (scan.hasNextBoolean())
-                            System.out.println(scan.nextBoolean() + ":boolean");
-                        else {
-                            System.out.println(scan.next() + ":String");
-                        }
-                    }
+                    System.out.println(scan.next() + " :String");
                 }
             }
         } catch (IOException e) {
-            System.err.println(e);
+            System.out.println(e.getMessage());
         }
     }
 
@@ -37,7 +33,7 @@ public class ScannerExample {
             fw.write("2 Java 1,5 true 1.6 ");
             fw.close();
         } catch (IOException e) {
-            System.err.println(e);
+            System.err.println(e.getMessage());
         }
     }
 
