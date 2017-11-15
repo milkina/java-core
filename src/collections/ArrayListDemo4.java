@@ -1,27 +1,31 @@
 package collections;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ArrayListDemo4 {
     public static void main(String[] args) {
-        List<String> arrayList1 = new ArrayList<>();
-        List<String> arrayList2 = new ArrayList<>();
+        List<String> arrayList = new ArrayList<>();
 
-        arrayList1.add("A");
-        arrayList1.add("A");
-        arrayList1.add("B");
-        arrayList1.add("C");
-        arrayList1.add("D");
-        arrayList1.add("E");
-        arrayList1.add("F");
-        arrayList1.add("F");
+        arrayList.add("C");
+        arrayList.add("A");
+        arrayList.add("E");
+        arrayList.add("B");
+        arrayList.add("D");
+        arrayList.add("F");
+        arrayList.add(null);
+        //1 вариант
+        Object[] objectArray = arrayList.toArray();
+        System.out.println(Arrays.toString(objectArray));
 
-        arrayList2.add("F");
-        arrayList2.add("FF");
-        arrayList2.add("E");
+        //2 вариант
+        String[] stringArray1 = new String[arrayList.size()];
+        arrayList.toArray(stringArray1);
+        System.out.println(Arrays.toString(stringArray1));
 
-        arrayList1.retainAll(arrayList2);
-        System.out.println(arrayList1);
+        //3 вариант
+        String[] stringArray2 = arrayList.toArray(new String[0]);
+        System.out.println(Arrays.toString(stringArray2));
     }
 }

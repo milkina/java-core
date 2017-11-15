@@ -1,11 +1,11 @@
 package collections;
 
-import java.util.NavigableSet;
+import java.util.SortedSet;
 import java.util.TreeSet;
 
-public class TreeSetDemo {
+public class TreeSetDemo1 {
     public static void main(String args[]) {
-        NavigableSet<String> treeSet = new TreeSet<>();
+        SortedSet<String> treeSet = new TreeSet<>();
 
         treeSet.add("Бета");
         treeSet.add("Aльфa");

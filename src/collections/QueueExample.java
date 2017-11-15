@@ -6,10 +6,10 @@ import java.util.Queue;
 public class QueueExample {
     public static void main(String[] args) {
         Queue<String> queue = new LinkedList<>();
-        queue.offer("Oklahoma");
-        queue.offer("Indiana");
-        queue.offer("Georgia");
-        queue.offer("Texas");
+        queue.offer("Харьков");
+        queue.offer("Киев");
+        queue.offer("Кременчуг");
+        queue.offer("Львов");
         while (queue.size() > 0) {
             System.out.print(queue.poll() + " ");
         }

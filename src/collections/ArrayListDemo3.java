@@ -9,20 +9,19 @@ public class ArrayListDemo3 {
         List<String> arrayList2 = new ArrayList<>();
 
         arrayList1.add("A");
+        arrayList1.add("A");
         arrayList1.add("B");
         arrayList1.add("C");
         arrayList1.add("D");
         arrayList1.add("E");
         arrayList1.add("F");
-        System.out.println(arrayList1);
+        arrayList1.add("F");
 
-        arrayList2.add("1");
-        arrayList2.add("2");
+        arrayList2.add("F");
+        arrayList2.add("FF");
+        arrayList2.add("E");
 
-        arrayList1.addAll(3, arrayList2);
-        System.out.println(arrayList1);
-
-        arrayList1.clear();
+        arrayList1.retainAll(arrayList2);
         System.out.println(arrayList1);
     }
 }
