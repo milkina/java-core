@@ -8,9 +8,11 @@ public class ArrayCopy1 {
         int[] arrayDestination = {0, 0, 0, 0, 0, 0, 0, 0};
 
         System.out.println("arraySource: " + Arrays.toString(arraySource));
-        System.out.println("arrayDestination: " + Arrays.toString(arrayDestination));
+        System.out.println("arrayDestination: "
+                + Arrays.toString(arrayDestination));
 
         System.arraycopy(arraySource, 1, arrayDestination, 2, 3);
-        System.out.println("arrayDestination after arrayCopy: " + Arrays.toString(arrayDestination));
+        System.out.println("arrayDestination after arrayCopy: "
+                + Arrays.toString(arrayDestination));
     }
 }

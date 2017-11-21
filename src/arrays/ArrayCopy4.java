@@ -14,7 +14,8 @@ public class ArrayCopy4 {
             if (newPosition < 0) {
                 newPosition = -newPosition - 1;
             }
-            System.arraycopy(array, newPosition, array, newPosition + 1, size - newPosition);
+            System.arraycopy(array, newPosition, array, newPosition + 1,
+                    size - newPosition);
             array[newPosition] = newElem;
             System.out.println(Arrays.toString(array));
             size++;

@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class ArrayDequeExample {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Deque<String> stack = new ArrayDeque<>();
         Deque<String> queue = new ArrayDeque<>(2);
         stack.push("A");

@@ -1,9 +1,9 @@
-package oop1;
+package oop.p2;
 
 import oop.Test4;
 
 public class AccessTest2 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Test4 object = new Test4();
 
         // These are OK, a and b may be accessed directly

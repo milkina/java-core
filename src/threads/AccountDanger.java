@@ -33,7 +33,8 @@ public class AccountDanger implements Runnable {
             }
             account.withdraw(amt);
             System.out.println(Thread.currentThread().getName()
-                    + " completes the withdrawal. The balance is " + account.getBalance());
+                    + " completes the withdrawal. The balance is "
+                    + account.getBalance());
         } else {
             System.out.println("Not enough in account for "
                     + Thread.currentThread().getName()
