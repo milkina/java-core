@@ -1,7 +1,7 @@
 package flow;
 
 public class BreakLoop3 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         boolean t = true;
         first:
         {
@@ -11,7 +11,7 @@ public class BreakLoop3 {
                 {
                     System.out.println("Before the break.");
                     if (t) {
-                        break second;// break out of second block
+                        break second; // break out of second block
                     }
                     System.out.println("This won't execute");
                 }

@@ -16,6 +16,6 @@ public class CastingDemo1 {
         HeavyBox1 heavyBox2 = (HeavyBox1) box2; //ClassCastException
 
         Box6 box3 = new Box6();
-        HeavyBox1 heavyBox3 = (HeavyBox1) box3;//ClassCastException
+        HeavyBox1 heavyBox3 = (HeavyBox1) box3; //ClassCastException
     }
 }

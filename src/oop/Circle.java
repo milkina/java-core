@@ -21,9 +21,4 @@ public class Circle {
         this.diam = diam;
         this.radius = diam / 2;
     }
-
-    public static void main(String[] args) {
-        Circle circle = new Circle();
-
-    }
 }
