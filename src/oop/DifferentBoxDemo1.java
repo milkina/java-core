@@ -7,7 +7,9 @@ public class DifferentBoxDemo1 {
         ColorBox colorBox = new ColorBox(25, 12, 20, "красный");
 
         System.out.println("Объём коробки: " + box.volume());
-        System.out.println("Объём коробки: " + heavyBox.volume() + " Вес коробки: " + heavyBox.weight);
-        System.out.println("Объём коробки: " + colorBox.volume() + " Цвет коробки: " + colorBox.color);
+        System.out.println("Объём коробки: " + heavyBox.volume()
+                + " Вес коробки: " + heavyBox.weight);
+        System.out.println("Объём коробки: " + colorBox.volume()
+                + " Цвет коробки: " + colorBox.color);
     }
 }

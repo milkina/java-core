@@ -10,7 +10,7 @@ import static jdbc.ConnectionData.USER;
 import static jdbc.ConnectionData.DB;
 
 public class CreatingDatabase {
-    private final static String CREATE_DATABASE_QUERY =
+    private static final String CREATE_DATABASE_QUERY =
             "CREATE DATABASE IF NOT EXISTS " + DB;
 
     public static void main(String[] args) throws ClassNotFoundException {
@@ -19,8 +19,10 @@ public class CreatingDatabase {
         Statement statement = null;
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql" //+ "?autoReconnect=true&useSSL=false"
-                    , USER, PASSWORD);
+            connection = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/mysql",
+                    //+ "?autoReconnect=true&useSSL=false"
+                    USER, PASSWORD);
             statement = connection.createStatement();
             statement.executeUpdate(CREATE_DATABASE_QUERY);
         } catch (Exception e) {

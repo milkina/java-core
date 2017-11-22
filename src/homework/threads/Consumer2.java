@@ -1,7 +1,7 @@
 package homework.threads;
 
 public class Consumer2 implements Runnable {
-    MyQueue2 myQueue;
+    private MyQueue2 myQueue;
 
     public Consumer2(MyQueue2 myQueue) {
         this.myQueue = myQueue;

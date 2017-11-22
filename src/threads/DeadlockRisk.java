@@ -2,7 +2,7 @@ package threads;
 
 public class DeadlockRisk {
     private static class Resource {
-        public int value;
+        private int value;
     }
 
     private Resource resourceA = new Resource();

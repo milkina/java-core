@@ -13,6 +13,8 @@ public class CoffeeSizeDemo2 {
             case OVERWHELMING:
                 System.out.println("Give me an overwhelming cup of coffee!");
                 break;
+            default:
+                System.out.println("The cup isn't selected");
         }
     }
 }

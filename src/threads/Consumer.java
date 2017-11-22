@@ -1,7 +1,7 @@
 package threads;
 
 public class Consumer implements Runnable {
-    MyQueue myQueue;
+    private MyQueue myQueue;
 
     public Consumer(MyQueue myQueue) {
         this.myQueue = myQueue;
