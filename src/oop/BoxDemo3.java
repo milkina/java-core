@@ -1,7 +1,7 @@
 package oop;
 
 public class BoxDemo3 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Box1 b1 = new Box1();
         Box1 b2 = b1;
 

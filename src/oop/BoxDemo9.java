@@ -1,7 +1,7 @@
 package oop;
 
 public class BoxDemo9 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // declare, allocate, and initialize Box objects
         Box5 myBox1 = new Box5(10, 20, 15);
 

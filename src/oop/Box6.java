@@ -1,7 +1,8 @@
 package oop;
 
 /**
- * В этом примере класс Вох определяет три конструктора для инициализации размеров параллелепипеда различными способами.
+ * В этом примере класс Вох определяет три конструктора для инициализации
+ * размеров параллелепипеда различными способами.
  */
 
 public class Box6 {
@@ -25,7 +26,9 @@ public class Box6 {
 
     // constructor used when cube is created
     Box6(double len) {
-        width = height = depth = len;
+        width = len;
+        height = len;
+        depth = len;
     }
 
     // compute and return volume

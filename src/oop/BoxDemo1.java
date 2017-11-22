@@ -1,7 +1,7 @@
 package oop;
 
 public class BoxDemo1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Box1 myBox = new Box1();
         // присвоить значение переменным экземпляра mybox
         myBox.width = 10;
