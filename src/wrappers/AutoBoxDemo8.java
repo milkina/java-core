@@ -1,7 +1,7 @@
 package wrappers;
 
 public class AutoBoxDemo8 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // Autobox/unbox a boolean.
         Boolean b = true;
 

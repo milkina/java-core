@@ -1,7 +1,7 @@
 package interfaces;
 
 public class B implements A.NestedIf {
-    public boolean isNotNegative(int х) {
-        return х >= 0;
+    public boolean isNotNegative(int x) {
+        return x >= 0;
     }
 }

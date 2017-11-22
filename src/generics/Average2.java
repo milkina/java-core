@@ -1,10 +1,10 @@
 package generics;
 
 public class Average2<T extends Number> {
-    T[] array;
+    private T[] array;
 
     public Average2(T[] array) {
-        this.array = array;
+        this.array = array.clone();
     }
 
     public double average() {

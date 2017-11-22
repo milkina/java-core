@@ -5,7 +5,7 @@ public class AutoBoxDemo6 {
         return v; // auto-unbox to int
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Integer iOb = m(100);
         System.out.println(iOb);
     }

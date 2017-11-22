@@ -7,8 +7,8 @@ public class ArrayListDemo1 {
     public static void main(String[] args) {
         List<String> arrayList = new ArrayList<>();
 
-        System.out.println("Initial size of arrayList: " +
-                arrayList.size());
+        System.out.println("Initial size of arrayList: "
+                + arrayList.size());
 
         arrayList.add("C");
         arrayList.add("A");
@@ -19,16 +19,16 @@ public class ArrayListDemo1 {
         arrayList.add(1, "A2");
         arrayList.set(0, "C2");
 
-        System.out.println("Size of arrayList after additions: " +
-                arrayList.size());
+        System.out.println("Size of arrayList after additions: "
+                + arrayList.size());
 
         System.out.println("Contents of arrayList: " + arrayList);
 
         arrayList.remove("F");
         arrayList.remove(2);
 
-        System.out.println("Size of arrayList after deletions: " +
-                arrayList.size());
+        System.out.println("Size of arrayList after deletions: "
+                + arrayList.size());
         System.out.println("Contents of arrayList: " + arrayList);
 
         List<String> removeElements = new ArrayList<>();
@@ -37,8 +37,9 @@ public class ArrayListDemo1 {
         removeElements.add("AA");
 
         arrayList.removeAll(removeElements);
-        System.out.println("Size of arrayList after removeAll: " +
-                arrayList.size());
-        System.out.println("Contents of arrayList after removeAll: " + arrayList);
+        System.out.println("Size of arrayList after removeAll: "
+                + arrayList.size());
+        System.out.println("Contents of arrayList after removeAll: "
+                + arrayList);
     }
 }

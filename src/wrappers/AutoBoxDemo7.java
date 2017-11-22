@@ -1,7 +1,7 @@
 package wrappers;
 
 public class AutoBoxDemo7 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Integer iOb1, iOb2;
         int i;
 

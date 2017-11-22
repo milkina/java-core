@@ -9,8 +9,8 @@ public class BackedCollections {
         map.put("a", "ant");
         map.put("d", "dog");
         map.put("h", "horse");
-
-        SortedMap<String, String> subMap = map.subMap("b", "g"); // #1 create a backed collection
+        // #1 create a backed collection
+        SortedMap<String, String> subMap = map.subMap("b", "g");
         System.out.println(map + " " + subMap); // #2 show contents
 
         map.put("b", "bat"); // #3 add to original
