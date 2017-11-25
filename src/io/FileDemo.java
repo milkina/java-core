@@ -7,7 +7,7 @@ public class FileDemo {
         System.out.println(s);
     }
 
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         File f1 = new File("src/io");
 
         p("File Name: " + f1.getName());

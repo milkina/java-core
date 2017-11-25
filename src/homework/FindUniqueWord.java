@@ -38,7 +38,8 @@ public class FindUniqueWord {
         return stringBuilder.toString();
     }
 
-    private static void deleteCharacters(StringBuilder stringBuilder, String letter, int i) {
+    private static void deleteCharacters(StringBuilder stringBuilder,
+                                         String letter, int i) {
         int pos;
         while ((pos = stringBuilder.indexOf(letter, i)) != -1) {
             stringBuilder.deleteCharAt(pos);

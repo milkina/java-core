@@ -2,7 +2,7 @@ package oop;
 
 public class FinalVariables {
     public static final int FILE_NEW = 1;
-    public final String SOME_STRING = "something";
+    private final String someString = "something";
 
     public static void print(final double d) {
         //  FILE_NEW = 2;

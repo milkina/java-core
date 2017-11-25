@@ -18,7 +18,9 @@ public class FileWriterReaderDemo {
             fw.flush();
 
             size = fr.read(in); // read the whole file!
-            System.out.println("Количество прочитанных символов: " + size + " "); // how many bytes read
+            // how many bytes read
+            System.out.println("Количество прочитанных символов: "
+                    + size + " ");
             for (char c : in) {
                 System.out.print(c);
             }

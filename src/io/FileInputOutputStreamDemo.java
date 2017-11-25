@@ -1,14 +1,20 @@
 package io;
 
-import java.io.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.IOException;
 
 public class FileInputOutputStreamDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         try {
-            char c[] = {'a', 'b', 'c'};
-            OutputStream output = new FileOutputStream("a.txt"); // Создание текстового файла
+            char[] c = {'a', 'b', 'c'};
+            // Создание текстового файла
+            OutputStream output = new FileOutputStream("a.txt");
             for (int i = 0; i < c.length; i++) {
-                output.write(c[i]); // Запись каждого символа в текстовый файл
+                // Запись каждого символа в текстовый файл
+                output.write(c[i]);
             }
             output.close();
 
@@ -16,7 +22,8 @@ public class FileInputOutputStreamDemo {
             int size = input.available();
 
             for (int j = 0; j < size; j++) {
-                System.out.print((char) input.read() + " "); // Чтение текстового файла посимвольно
+                // Чтение текстового файла посимвольно
+                System.out.print((char) input.read() + " ");
             }
             input.close();
         } catch (IOException e) {

@@ -1,7 +1,7 @@
 package inner;
 
 public class Food {
-    Potato p = new Potato() {
+    private Potato p = new Potato() {
         public void fry() {
             System.out.println("Frying potato anonymously.");
         }
