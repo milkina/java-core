@@ -1,6 +1,6 @@
 package inheritance;
 
-abstract public class Figure2 {
+public abstract class Figure2 {
     double dim1;
     double dim2;
 
@@ -9,5 +9,5 @@ abstract public class Figure2 {
         this.dim2 = dim2;
     }
 
-    abstract public double area();
+    public abstract double area();
 }
