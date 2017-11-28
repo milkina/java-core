@@ -1,17 +1,24 @@
 package jdbc;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
-import static jdbc.ConnectionData.*;
+import static jdbc.ConnectionData.DRIVER;
+import static jdbc.ConnectionData.URL;
+import static jdbc.ConnectionData.USER;
+import static jdbc.ConnectionData.PASSWORD;
 
 public class InsertDataPreparedStatement {
-    private final static String insertQuery = "INSERT INTO users (username) VALUES (?);";
+    private static final String INSERT_QUERY =
+            "INSERT INTO users (username) VALUES (?);";
 
     public static void main(String[] args) throws ClassNotFoundException {
         Class.forName(DRIVER);
-        try (java.sql.Connection connection = DriverManager.getConnection(URL, USER, PASSWORD);
-             PreparedStatement preparedStatement = connection.prepareStatement(insertQuery)) {
+        try (Connection connection =
+                     DriverManager.getConnection(URL, USER, PASSWORD);
+             PreparedStatement preparedStatement =
+                     connection.prepareStatement(INSERT_QUERY)) {
 
             preparedStatement.setString(1, "misha");
             preparedStatement.addBatch();
