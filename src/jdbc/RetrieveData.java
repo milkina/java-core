@@ -1,5 +1,6 @@
 package jdbc;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -14,7 +15,7 @@ public class RetrieveData {
 
     public static void main(String[] args) throws ClassNotFoundException {
         Class.forName(DRIVER);
-        try (java.sql.Connection connection =
+        try (Connection connection =
                      DriverManager.getConnection(URL, USER, PASSWORD);
              Statement statement = connection.createStatement()) {
 
