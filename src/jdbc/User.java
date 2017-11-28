@@ -27,13 +27,20 @@ public class User {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         User user = (User) o;
 
-        if (getId() != user.getId()) return false;
-        return getName() != null ? getName().equals(user.getName()) : user.getName() == null;
+        if (getId() != user.getId()) {
+            return false;
+        }
+        return getName() != null ? getName().equals(user.getName())
+                : user.getName() == null;
 
     }
 
@@ -46,9 +53,9 @@ public class User {
 
     @Override
     public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                '}';
+        return "User{"
+                + "id=" + id
+                + ", name='" + name + '\''
+                + '}';
     }
 }
