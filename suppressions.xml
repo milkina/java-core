@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC "-//Puppy Crawl//DTD Suppressions 1.1//EN"
+        "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+<suppressions>
+    <suppress files="." checks="HideUtilityClassConstructorCheck"/>
+    <suppress files="." checks="JavadocPackageCheck"/>
+    <suppress files="." checks="MagicNumberCheck"/>
+    <suppress files="." checks="JavadocMethodCheck"/>
+    <suppress files="." checks="FinalParametersCheck"/>
+    <suppress files="." checks="JavadocTypeCheck"/>
+    <suppress files="." checks="JavadocVariableCheck"/>
+    <suppress files="." checks="DesignForExtensionCheck"/>
+    <suppress files="." checks="HiddenFieldCheck"/>
+    <suppress files="." checks="AvoidInlineConditionalsCheck"/>
+
+    <suppress files="NoBody.java" checks="NeedBracesCheck"/>
+    <suppress files="NoBody.java" checks="EmptyStatementCheck"/>
+    <suppress files="inheritance[\\/](A|C|D|Figure|Figure2|M|N).java" checks="VisibilityModifierCheck" />
+    <suppress files="oop[\\/](Box[1-6]|HeavyBox|HeavyBox1|StaticVars|Test4|UseStatic|ColorBox|Shipment|Test2|Test3).java" checks="VisibilityModifierCheck" />
+    <suppress files="introduction[\\/]VarDemo.java" checks="VisibilityModifierCheck" />
+    <suppress files="introduction[\\/]VarDemo.java" checks="AvoidNestedBlocksCheck" />
+    <suppress files="enumerations[\\/](Coffee|Coffee3).java" checks="VisibilityModifierCheck" />
+</suppressions>
