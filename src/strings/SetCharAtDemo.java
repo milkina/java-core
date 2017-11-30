@@ -1,7 +1,7 @@
 package strings;
 
 public class SetCharAtDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("Hello");
         System.out.println("string before = " + sb);
         System.out.println("charAt(1) before = " + sb.charAt(1));

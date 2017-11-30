@@ -9,7 +9,8 @@ public class SerializeBird {
     public static void main(String[] args) {
         Ring ring = new Ring(3);
         Bird bird = new Bird("pigeon", ring);
-        System.out.println("Ring size before serialization: " + bird.getRing().getSize());
+        System.out.println("Ring size before serialization: "
+                + bird.getRing().getSize());
         try {
             FileOutputStream fs = new FileOutputStream("testSer.ser");
             ObjectOutputStream os = new ObjectOutputStream(fs);
@@ -26,6 +27,7 @@ public class SerializeBird {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        System.out.println("Ring size after serialization: " + bird.getRing().getSize());
+        System.out.println("Ring size after serialization: "
+                + bird.getRing().getSize());
     }
 }

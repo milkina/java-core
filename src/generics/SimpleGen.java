@@ -1,7 +1,7 @@
 package generics;
 
 public class SimpleGen {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         TwoGen<Integer, String> tgObj = new TwoGen<>(88, "Generics");
 
         tgObj.showTypes();

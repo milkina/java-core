@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class ScannerExample {
-    static String filename = "scan.txt";
+    private static String filename = "scan.txt";
 
     public static void scanFile() {
         try (FileReader fr = new FileReader(filename);
@@ -28,12 +28,10 @@ public class ScannerExample {
     }
 
     public static void makeFile() {
-        try {
-            FileWriter fw = new FileWriter(filename);
+        try (FileWriter fw = new FileWriter(filename)) {
             fw.write("2 Java 1,5 true 1.6 ");
-            fw.close();
         } catch (IOException e) {
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
 
