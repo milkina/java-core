@@ -24,7 +24,8 @@ public class LocaleDemo1 {
         System.out.println("Код региона: " + current.getCountry());
         System.out.println("Название региона: " + current.getDisplayCountry());
         System.out.println("Код языка региона: " + current.getLanguage());
-        System.out.println("Название языка региона: " + current.getDisplayLanguage());
+        System.out.println("Название языка региона: "
+                + current.getDisplayLanguage());
         System.out.println();
     }
 }
