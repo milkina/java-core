@@ -1,7 +1,7 @@
 package oop;
 
 public class Matrix {
-    private double array[][];
+    private double[][] array;
     private int rows;
     private int columns;
 
@@ -10,11 +10,11 @@ public class Matrix {
     }
 
     public double[][] getArray() {
-        return array;
+        return array.clone();
     }
 
     public void setArray(double[][] array) {
-        this.array = array;
+        this.array = array.clone();
         this.rows = array.length;
         this.columns = array[0].length;
     }

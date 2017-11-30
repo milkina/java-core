@@ -13,7 +13,7 @@ public class N extends M {
         System.out.println("k = " + k);
     }
 
-    public void someMethod(){
+    public void someMethod() {
         print();
     }
 }

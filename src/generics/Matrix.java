@@ -4,7 +4,7 @@ public class Matrix<T> {
     private T[] array;
 
     public Matrix(T[] array) {
-        this.array = array;
+        this.array = array.clone();
     }
 
     public static void main(String[] args) {

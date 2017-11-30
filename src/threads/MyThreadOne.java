@@ -5,7 +5,6 @@ public class MyThreadOne extends Thread {
 
     public MyThreadOne() {
         System.out.println("MyThreadOne create");
-
     }
 
     public void run() {

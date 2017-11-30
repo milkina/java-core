@@ -10,9 +10,9 @@ public class MyException extends Exception {
 
     @Override
     public String toString() {
-        return "MyException{" +
-                "detail=" + detail +
-                ", message=" + getMessage() +
-                "} ";
+        return "MyException{"
+                + "detail=" + detail
+                + ", message=" + getMessage()
+                + "} ";
     }
 }
