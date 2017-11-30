@@ -1,7 +1,7 @@
 package threads;
 
 public class MyThreadOne extends Thread {
-    Thread t2;
+    private Thread t2;
 
     public MyThreadOne() {
         System.out.println("MyThreadOne create");
