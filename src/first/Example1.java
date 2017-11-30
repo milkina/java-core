@@ -1,6 +1,6 @@
-package p1;
+package first;
 
-import p2.Example2;
+import second.Example2;
 
 public class Example1 {
     public static void main(String[] args) {
