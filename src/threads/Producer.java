@@ -1,7 +1,7 @@
 package threads;
 
 public class Producer implements Runnable {
-    MyQueue myQueue;
+    private MyQueue myQueue;
 
     public Producer(MyQueue myQueue) {
         this.myQueue = myQueue;
