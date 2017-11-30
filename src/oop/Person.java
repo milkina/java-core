@@ -40,23 +40,33 @@ public class Person {
 
     @Override
     public String toString() {
-        return "Person{" +
-                "fullName='" + fullName + '\'' +
-                ", age=" + age +
-                ", retired=" + retired +
-                '}';
+        return "Person{"
+                + "fullName='" + fullName + '\''
+                + ", age=" + age
+                + ", retired=" + retired
+                + '}';
     }
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         Person person = (Person) o;
 
-        if (getAge() != person.getAge()) return false;
-        if (isRetired() != person.isRetired()) return false;
-        return getFullName() != null ? getFullName().equals(person.getFullName()) : person.getFullName() == null;
+        if (getAge() != person.getAge()) {
+            return false;
+        }
+        if (isRetired() != person.isRetired()) {
+            return false;
+        }
+        return getFullName() != null
+                ? getFullName().equals(person.getFullName())
+                : person.getFullName() == null;
 
     }
 

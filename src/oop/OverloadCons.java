@@ -1,7 +1,7 @@
 package oop;
 
 public class OverloadCons {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // create boxes using the various constructors
         Box6 myBox1 = new Box6(10, 20, 15);
         Box6 myBox2 = new Box6();

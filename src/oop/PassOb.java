@@ -1,7 +1,7 @@
 package oop;
 
 public class PassOb {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Test ob1 = new Test(100, 22);
         Test ob2 = new Test(100, 22);
         Test ob3 = new Test(-1, -1);

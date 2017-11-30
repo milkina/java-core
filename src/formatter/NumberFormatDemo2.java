@@ -6,7 +6,8 @@ public class NumberFormatDemo2 {
     public static void main(String[] args) {
         double d = 123.45678;
         NumberFormat nf = NumberFormat.getInstance();
-        System.out.print("Максимальное количество знаков в дробной части " + nf.getMaximumFractionDigits() + ": ");
+        System.out.print("Максимальное количество знаков в дробной части "
+                + nf.getMaximumFractionDigits() + ": ");
         System.out.println(nf.format(d) + " ");
         nf.setMaximumFractionDigits(7);
         System.out.print("Максимальное количество знаков в дробной части 7: ");

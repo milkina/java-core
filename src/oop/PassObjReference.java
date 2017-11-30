@@ -1,7 +1,7 @@
 package oop;
 
 public class PassObjReference {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Test2 ob = new Test2(15, 20);
 
         int x = 10;
