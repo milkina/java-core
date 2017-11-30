@@ -9,12 +9,15 @@ public class TryWithResourcesDemo {
         readFirstLineFromFileWithFinallyBlock("a.txt");
     }
 
-    public static String readFirstLineFromFileWithFinallyBlock(String path) throws IOException {
+    public static String readFirstLineFromFileWithFinallyBlock(String path)
+            throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(path));
         try {
             return br.readLine();
         } finally {
-            if (br != null) br.close();
+            if (br != null) {
+                br.close();
+            }
         }
     }
 
@@ -25,7 +28,8 @@ public class TryWithResourcesDemo {
         }
     }
 
-    public static String readFirstLineFromFile2(String path) throws IOException {
+    public static String readFirstLineFromFile2(String path)
+            throws IOException {
         try (FileReader f = new FileReader("a.txt");
              BufferedReader br = new BufferedReader(f)) {
             return br.readLine();

@@ -5,7 +5,7 @@ import java.util.Set;
 import java.util.TreeMap;
 
 public class TreeMapDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // Create a tree map.
         Map<String, Double> tm = new TreeMap<>();
 
@@ -30,8 +30,8 @@ public class TreeMapDemo {
         double balance = tm.get("John Doe");
         tm.put("John Doe", balance + 1000);
 
-        System.out.println("John Doe's new balance: " +
-                tm.get("John Doe"));
+        System.out.println("John Doe's new balance: "
+              +  tm.get("John Doe"));
         for (Double value : tm.values()) {
             System.out.println(value);
         }
