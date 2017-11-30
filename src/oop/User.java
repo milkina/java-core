@@ -19,7 +19,8 @@ public class User {
 
     public String getPassword() {
         String str = "**************";
-        int length = password.length() > str.length() ? str.length() : password.length();
+        int length = password.length() > str.length()
+                ? str.length() : password.length();
         return password.charAt(0) + str.substring(1, length);
     }
 

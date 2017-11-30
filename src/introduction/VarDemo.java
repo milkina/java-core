@@ -1,4 +1,4 @@
-package lesson2;
+package introduction;
 
 public class VarDemo {
     String str1 = "Hello!";
@@ -8,15 +8,16 @@ public class VarDemo {
         int x; // переменная x доступна всему коду из метода main ( )
         x = 10;
         if (x == 10) { // начало новой области действия,
-            int у = 20;
+            int y = 20;
             //int x = 45; // ОШИБКА! Во внутреннем блоке кода нельзя
-            // объявлять переменные с тем же именем, что и во внешней области действия.
+            // объявлять переменные с тем же именем,
+            // что и во внешней области действия.
             //обе переменные х и у доступны в этой области действия
-            System.out.println(" x и у : " + x + " " + у);
-            x = у * 2;
+            System.out.println(" x и у : " + x + " " + y);
+            x = y * 2;
             {
                 int z = 34;
-                System.out.println(" x и у : " + x + " " + у);
+                System.out.println(" x и у : " + x + " " + y);
                 System.out.println(" z: " + z);
             }
         }
