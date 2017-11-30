@@ -1,7 +1,7 @@
 package strings;
 
 public class ReverseDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         StringBuilder s = new StringBuilder("abcdef");
 
         System.out.println(s);

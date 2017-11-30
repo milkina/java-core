@@ -4,7 +4,7 @@ import java.util.Properties;
 import java.util.Set;
 
 public class PropertyDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Properties capitals = new Properties();
 
         capitals.put("Illinois", "Springfield");
@@ -18,8 +18,8 @@ public class PropertyDemo {
 
         // Show all of the states and capitals.
         for (Object name : states) {
-            System.out.println("The capital of " + name + " is " +
-                    capitals.getProperty((String) name) + ".");
+            System.out.println("The capital of " + name + " is "
+                    + capitals.getProperty((String) name) + ".");
         }
 
         System.out.println();

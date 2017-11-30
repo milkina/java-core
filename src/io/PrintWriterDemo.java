@@ -10,7 +10,7 @@ public class PrintWriterDemo {
         try (PrintWriter printWriter = new PrintWriter("notes.txt")) {
             printWriter.println(s1);
             int i = 2;
-            printWriter.printf("Квадрат числа %d равен %d \n", i, i * i);
+            printWriter.printf("Квадрат числа %d равен %d %n", i, i * i);
             printWriter.write(s2);
             printWriter.print("Конец");
             System.out.println("Запись в файл произведена");

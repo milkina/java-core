@@ -9,17 +9,17 @@ package javadoc;
  */
 class Product {
     /**
-     * Свойство - производитель
+     * Свойство - производитель.
      */
     private String maker;
 
     /**
-     * Свойство - цена
+     * Свойство - цена.
      */
-    public double price;
+    private double price;
 
     /**
-     * Создает новый пустой объект
+     * Создает новый пустой объект.
      *
      * @see Product#Product(String, double)
      */
@@ -29,7 +29,7 @@ class Product {
     }
 
     /**
-     * Создает новый объект с заданными значениями
+     * Создает новый объект с заданными значениями.
      *
      * @param maker - производитель
      * @param price - цена
@@ -41,7 +41,7 @@ class Product {
     }
 
     /**
-     * Функция для получения значения поля {@link Product#maker}
+     * Функция для получения значения поля {@link Product#maker}.
      *
      * @return Возвращает название производителя
      */

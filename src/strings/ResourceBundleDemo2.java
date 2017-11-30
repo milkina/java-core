@@ -15,7 +15,8 @@ public class ResourceBundleDemo2 {
         printInfo("uk", "UA");
     }
 
-    private static void printInfo(String language, String country) throws UnsupportedEncodingException {
+    private static void printInfo(String language, String country)
+            throws UnsupportedEncodingException {
         Locale current = new Locale(language, country);
         ResourceBundle rb = ResourceBundle.getBundle("text", current);
         for (String key : rb.keySet()) {
