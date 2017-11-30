@@ -35,6 +35,8 @@ public class ThreadDemo {
                     case 3:
                         y.b();
                         break;
+                    default:
+                        System.out.println("default");
                 }
             }
         };
