@@ -1,17 +1,18 @@
-package console;
+package introduction;
 
 import java.util.Scanner;
 
 public class ScannerDemo1 {
     public static void main(String[] args) {
         // создаём объект класса Scanner
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        int i;
         System.out.print("Введите целое число: ");
         // возвращает истину если с потока ввода можно считать целое число
-        if (sc.hasNextInt()) {
+        if (scanner.hasNextInt()) {
             // считывает целое число с потока ввода и сохраняем в переменную
-            int i = sc.nextInt();
-            System.out.println(i * 2);
+            i = scanner.nextInt();
+            System.out.println(i);
         } else {
             System.out.println("Вы ввели не целое число");
         }
