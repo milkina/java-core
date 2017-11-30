@@ -3,7 +3,7 @@ package oop;
 public class Test2 {
     int a, b;
 
-    Test2(int i, int j) {
+    public Test2(int i, int j) {
         a = i;
         b = j;
     }

@@ -2,11 +2,11 @@ package oop;
 
 public class Toy {
     private String name;
-    private int сost;
+    private int cost;
 
-    public Toy(String name, int сost) {
+    public Toy(String name, int cost) {
         this(name);
-        this.сost = сost;
+        this.cost = cost;
         System.out.println("In constructor with two parameters");
     }
 
@@ -28,11 +28,11 @@ public class Toy {
         this.name = name;
     }
 
-    public int getСost() {
-        return сost;
+    public int getCost() {
+        return cost;
     }
 
-    public void setСost(int сost) {
-        this.сost = сost;
+    public void setCost(int cost) {
+        this.cost = cost;
     }
 }

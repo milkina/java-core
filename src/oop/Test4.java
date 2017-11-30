@@ -16,10 +16,10 @@ public class Test4 {
 
     @Override
     public String toString() {
-        return "Test4{" +
-                "b=" + b +
-                ", c=" + c +
-                ", a=" + a +
-                '}';
+        return "Test4{"
+                + "b=" + b
+                + ", c=" + c
+                + ", a=" + a
+                + '}';
     }
 }

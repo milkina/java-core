@@ -1,9 +1,9 @@
 package oop;
 
 public class Test {
-    int a, b;
+   private int a, b;
 
-    Test(int i, int j) {
+   public Test(int i, int j) {
         a = i;
         b = j;
     }

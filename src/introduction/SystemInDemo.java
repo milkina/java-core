@@ -1,4 +1,4 @@
-package lesson2;
+package introduction;
 
 public class SystemInDemo {
     public static void main(String[] args) {
