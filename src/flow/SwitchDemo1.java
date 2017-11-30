@@ -1,7 +1,7 @@
 package flow;
 
 public class SwitchDemo1 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int month = 4;
         String season;
         switch (month) {

@@ -1,7 +1,7 @@
 package flow;
 
 public class SwitchDemo3 {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int z = 8;
         switch (z) {
             case 1:
