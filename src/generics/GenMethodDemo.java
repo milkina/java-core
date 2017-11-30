@@ -11,8 +11,8 @@ public class GenMethodDemo {
         return false;
     }
 
-    public static void main(String args[]) {
-        Integer nums[] = {1, 2, 3, 4, 5};
+    public static void main(String[] args) {
+        Integer[] nums = {1, 2, 3, 4, 5};
 
         if (isIn(2, nums)) {
             System.out.println("2 is in nums");
@@ -23,7 +23,7 @@ public class GenMethodDemo {
         }
         System.out.println();
 
-        String strs[] = {"one", "two", "three",
+        String[] strs = {"one", "two", "three",
                 "four", "five"};
 
         if (isIn("two", strs)) {

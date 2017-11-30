@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class HashMapDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // Create a hash map.
         Map<String, Double> hm = new HashMap<>();
 
@@ -31,7 +31,7 @@ public class HashMapDemo {
         double balance = hm.get("John Doe");
         hm.put("John Doe", balance + 1000);
 
-        System.out.println("John Doe's new balance: " +
-                hm.get("John Doe"));
+        System.out.println("John Doe's new balance: "
+                + hm.get("John Doe"));
     }
 }

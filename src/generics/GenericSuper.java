@@ -1,7 +1,7 @@
 package generics;
 
 public class GenericSuper<T> {
-    T ob;
+    private T ob;
 
     GenericSuper(T ob) {
         this.ob = ob;

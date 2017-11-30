@@ -1,7 +1,7 @@
 package generics;
 
 public class HierarchyDemo {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         GenericSuper<Integer> iOb = new GenericSuper<>(88);
         GenericSub<Integer> iOb2 = new GenericSub<>(99);
         GenericSub<String> strOb2 = new GenericSub<>("Generics Test");
