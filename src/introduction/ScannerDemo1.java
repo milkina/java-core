@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class ScannerDemo1 {
     public static void main(String[] args) {
-        // создаём объект класса Scanner
         Scanner scanner = new Scanner(System.in);
         int i;
         System.out.print("Введите целое число: ");
