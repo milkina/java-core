@@ -7,6 +7,6 @@ public class Return1 {
         if (t) {
             return; // возврат в вызывающий код
         }
-        System.out.println("Этoт оператор выполняться не будет.");
+        System.out.println("Этот оператор выполняться не будет.");
     }
 }
