@@ -1,7 +1,6 @@
 package oop;
 
 public class Factorial {
-    // this is a recursive function
     int fact(int n) {
         int result;
 

@@ -2,18 +2,12 @@ package oop;
 
 public class BoxDemo4 {
     public static void main(String[] args) {
-        Box1 myBox1 = new Box1();
-        Box1 myBox2 = new Box1();
+        Box3 myBox1 = new Box3(10, 20, 15);
+        Box3 myBox2 = new Box3(3, 6, 9);
+        //Не можем использовать конструктор по умолчанию
+        //Box3 myBox3 = new Box3();
 
-        myBox1.width = 10;
-        myBox1.height = 20;
-        myBox1.depth = 15;
-
-        myBox2.width = 1;
-        myBox2.height = 5;
-        myBox2.depth = 5;
-
-        myBox1.volume();
-        myBox2.volume();
+        System.out.println("Объем: " + myBox1.getVolume());
+        System.out.println("Объем: " + myBox2.getVolume());
     }
 }

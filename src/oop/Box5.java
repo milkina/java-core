@@ -5,19 +5,19 @@ public class Box5 {
     double height;
     double depth;
 
-    // This is the constructor for Box.
+    // Конструктор класса Box5
     Box5(double w, double h, double d) {
         width = w;
         height = h;
         depth = d;
     }
 
-    // compute and return volume
-    double volume() {
+    // подсчитать объем коробки
+    double getVolume() {
         return width * height * depth;
     }
 
     protected void finalize() {
-        System.out.println("Goodbye box");
+        System.out.println("Коробка исчезает навсегда.");
     }
 }

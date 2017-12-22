@@ -9,7 +9,6 @@ public class Shipment extends HeavyBox1 {
     }
 
     public Shipment(double cost) {
-        super();
         this.cost = cost;
     }
 }

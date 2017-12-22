@@ -5,15 +5,15 @@ public class Box3 {
     double height;
     double depth;
 
-    // Constructor of class Box3
+    // Конструктор класса Box3
     Box3(double w, double h, double d) {
         width = w;
         height = h;
         depth = d;
     }
 
-    // display volume of a box
-    double volume() {
+    // подсчитать объем коробки
+    double getVolume() {
         return width * height * depth;
     }
 }

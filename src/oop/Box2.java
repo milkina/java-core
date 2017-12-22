@@ -6,14 +6,14 @@ public class Box2 {
     double depth;
 
     Box2() {
-        System.out.println("Koнcтpyиpoвaниe объекта Вох2");
+        System.out.println("Конструирование объекта Вох2");
         width = 10;
         height = 10;
         depth = 10;
     }
 
-    // display volume of a box
-    double volume() {
+    // подсчитать объем коробки
+    double getVolume() {
         return width * height * depth;
     }
 }

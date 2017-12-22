@@ -2,7 +2,7 @@ package oop;
 
 /**
  * В этом примере класс Вох определяет три конструктора для инициализации
- * размеров параллелепипеда различными способами.
+ * размеров коробки различными способами.
  */
 
 public class Box6 {
@@ -10,29 +10,26 @@ public class Box6 {
     double height;
     double depth;
 
-    // constructor used when all dimensions specified
     Box6(double w, double h, double d) {
         width = w;
         height = h;
         depth = d;
     }
 
-    // constructor used when no dimensions specified
     public Box6() {
-        width = -1;  // use -1 to indicate
-        height = -1; // an uninitialized
-        depth = -1;  // box
+        width = -1;  // используем -1 для
+        height = -1; // обозначения непроинициализированной
+        depth = -1;  // коробки
     }
 
-    // constructor used when cube is created
     Box6(double len) {
         width = len;
         height = len;
         depth = len;
     }
 
-    // compute and return volume
-    double volume() {
+    // подсчитать объем коробки
+    double getVolume() {
         return width * height * depth;
     }
 }

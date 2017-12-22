@@ -1,15 +1,25 @@
 package oop;
 
 public class Overload1 {
-    public static void main(String[] args) {
-        OverloadDemo1 ob = new OverloadDemo1();
-        double result;
+    void test() {
+        System.out.println("No parameters");
+    }
+    //illegal overloading method
+   /* int test() {
+        System.out.println("No parameters");
+        return 1;
+    }*/
 
-        // call all versions of test()
-        ob.test();
-        ob.test(10);
-        ob.test(10, 20);
-        result = ob.test(123.25);
-        System.out.println("Result of ob.test(123.25): " + result);
+    void test(int a) {
+        System.out.println("a: " + a);
+    }
+
+    void test(int a, int b) {
+        System.out.println("a and b: " + a + " " + b);
+    }
+
+    double test(double a) {
+        System.out.println("double a: " + a);
+        return a * a;
     }
 }

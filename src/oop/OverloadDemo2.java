@@ -1,18 +1,15 @@
 package oop;
 
 public class OverloadDemo2 {
-    void test() {
-        System.out.println("No parameters");
-    }
+    public static void main(String[] args) {
+        Overload2 ob = new Overload2();
+        double result;
+        int i = 88;
 
-    // Overload1 test for two integer parameters.
-    void test(int a, int b) {
-        System.out.println("a and b: " + a + " " + b);
-    }
-
-    // overload test for a double parameter
-    double test(double a) {
-        System.out.println("double a: " + a);
-        return a * a;
+        ob.test();
+        ob.test(i);
+        ob.test(10, 20);
+        result = ob.test(123.25);
+        System.out.println("Result of ob.test(123.25): " + result);
     }
 }

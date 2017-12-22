@@ -9,6 +9,6 @@ public class BoxDemo1 {
         myBox.depth = 15;
         // рассчитать объем параллелепипеда
         double volume = myBox.width * myBox.height * myBox.depth;
-        System.out.println("Oбъeм равен " + volume);
+        System.out.println("Объем равен " + volume);
     }
 }

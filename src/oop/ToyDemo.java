@@ -6,7 +6,7 @@ package oop;
 public class ToyDemo {
     public static void main(String[] args) {
         Toy toy = new Toy("Doll", 34);
-        System.out.println(toy.getName());
-        System.out.println(toy.getCost());
+        System.out.println(toy.name);
+        System.out.println(toy.cost);
     }
 }

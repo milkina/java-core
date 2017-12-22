@@ -8,13 +8,13 @@ public class Test2 {
         b = j;
     }
 
-    // pass an object
+    // передача объекта
     void meth(Test2 o) {
         o.a *= 2;
         o.b /= 2;
     }
 
-    // pass an int
+    // передача примитивных типов
     void meth(int a, int b) {
         a *= 2;
         b /= 2;

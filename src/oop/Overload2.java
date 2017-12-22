@@ -1,16 +1,16 @@
 package oop;
 
 public class Overload2 {
-    public static void main(String[] args) {
-        OverloadDemo2 ob = new OverloadDemo2();
-        double result;
-        int i = 88;
+    void test() {
+        System.out.println("No parameters");
+    }
 
-        // call all versions of test()
-        ob.test();
-        ob.test(i);
-        ob.test(10, 20);
-        result = ob.test(123.25);
-        System.out.println("Result of ob.test(123.25): " + result);
+    void test(int a, int b) {
+        System.out.println("a and b: " + a + " " + b);
+    }
+
+    double test(double a) {
+        System.out.println("double a: " + a);
+        return a * a;
     }
 }
