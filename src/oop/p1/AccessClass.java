@@ -1,12 +1,13 @@
-package oop.p2;
+package oop.p1;
 
-import oop.p1.Parent;
-
+/**
+ * Created by Tatyana on 25.12.2017.
+ */
 public class AccessClass {
     public static void main(String[] args) {
         Parent parent = new Parent();
         parent.publicAccessMethod();
-        //  parent.defaultAccessMethod();
-        // parent.protectedAccessMethod();
+        parent.defaultAccessMethod();
+        parent.protectedAccessMethod();
     }
 }

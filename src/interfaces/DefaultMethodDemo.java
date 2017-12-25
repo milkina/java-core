@@ -2,15 +2,11 @@ package interfaces;
 
 public class DefaultMethodDemo {
     public static void main(String[] args) {
-        MyIf obj1 = new MyIfImp();
-        MyIf obj2 = new MyIfImp2();
-        int defNum = MyIf.staticMethod();
+        SomeInterface obj1 = new SomeInterfaceImpl1();
+        SomeInterface obj2 = new SomeInterfaceImpl2();
 
-        System.out.println(obj1.getNumber());
         System.out.println(obj1.defaultMethod());
 
-        System.out.println(obj2.getNumber());
         System.out.println(obj2.defaultMethod());
-        System.out.println(defNum);
     }
 }

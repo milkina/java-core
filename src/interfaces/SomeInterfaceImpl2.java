@@ -1,11 +1,9 @@
 package interfaces;
 
-public class MyIfImp2 implements MyIf {
-    @Override
-    public int getNumber() {
-        return 1;
-    }
-
+/**
+ * Created by Tatyana on 25.12.2017.
+ */
+public class SomeInterfaceImpl2 implements SomeInterface {
     @Override
     public String defaultMethod() {
         return "Другая символьная строка";

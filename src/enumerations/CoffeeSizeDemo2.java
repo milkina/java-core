@@ -5,16 +5,16 @@ public class CoffeeSizeDemo2 {
         CoffeeSize coffeeSize = CoffeeSize.BIG;
         switch (coffeeSize) {
             case BIG:
-                System.out.println("Give me a big cup of coffee!");
+                System.out.println("Дайте мне большую чашку кофе!");
                 break;
             case HUGE:
-                System.out.println("Give me a huge cup of coffee!");
+                System.out.println("Дайте мне огромную чашку кофе!");
                 break;
             case OVERWHELMING:
-                System.out.println("Give me an overwhelming cup of coffee!");
+                System.out.println("Дайте мне громадную чашку кофе!");
                 break;
             default:
-                System.out.println("The cup isn't selected");
+                System.out.println("Чашка не выбрана.");
         }
     }
 }

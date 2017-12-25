@@ -3,7 +3,7 @@ package enumerations;
 public class CoffeeSizeDemo3 {
     public static void main(String[] args) {
         CoffeeSize coffeeSize;
-        System.out.println("Кoнcтaнты перечислимого типа CoffeeSize:");
+        System.out.println("Константы перечислимого типа CoffeeSize:");
         CoffeeSize[] coffeeSizes = CoffeeSize.values();
         for (CoffeeSize c : coffeeSizes) {
             System.out.println(c);
