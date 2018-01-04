@@ -1,13 +1,13 @@
 package wrappers;
 
 public class BoxAndWiden {
-    static void go(Object o) {
-        Byte b2 = (Byte) o; // ok - it's a Byte object
+    public static void go(Object o) {
+        Byte b2 = (Byte) o;
         System.out.println(b2);
     }
 
     public static void main(String[] args) {
         byte b = 5;
-        go(b); // can this byte turn into an Object ?
+        go(b); // можно ли преобразовать byte в Object?
     }
 }

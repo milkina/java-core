@@ -30,6 +30,5 @@ public class ListIteratorDemo {
             String element = listIterator.previous();
             System.out.print(element + " ");
         }
-        System.out.println();
     }
 }

@@ -2,25 +2,21 @@ package strings;
 
 public class IndexOfDemo {
     public static void main(String[] args) {
-        String s = "Now is the time for all good men "
-                + "to come to the aid of their country.";
+        String s = "Для работы со строками в языке Java используются " +
+                "классы String, StringBuilder, StringBuffer.";
 
         System.out.println(s);
-        System.out.println("indexOf(t) = "
-                + s.indexOf('t'));
-        System.out.println("lastIndexOf(t) = "
-                + s.lastIndexOf('t'));
-        System.out.println("indexOf(the) = "
-                + s.indexOf("the"));
-        System.out.println("lastIndexOf(the) = "
-                + s.lastIndexOf("the"));
-        System.out.println("indexOf(t, 10) = "
-                + s.indexOf('t', 10));
-        System.out.println("lastIndexOf(t, 60) = "
-                + s.lastIndexOf('t', 60));
-        System.out.println("indexOf(the, 10) = "
-                + s.indexOf("the", 10));
-        System.out.println("lastIndexOf(the, 60) = "
-                + s.lastIndexOf("the", 60));
+        System.out.println("indexOf(r) = "
+                + s.indexOf('r'));
+        System.out.println("lastIndexOf(r) = "
+                + s.lastIndexOf('r'));
+        System.out.println("indexOf(String) = "
+                + s.indexOf("String"));
+        System.out.println("lastIndexOf(String) = "
+                + s.lastIndexOf("String"));
+        System.out.println("indexOf(S, 60) = "
+                + s.indexOf('S', 60));
+        System.out.println("lastIndexOf(S, 70) = "
+                + s.lastIndexOf('S', 70));
     }
 }

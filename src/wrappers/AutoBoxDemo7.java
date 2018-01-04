@@ -7,10 +7,10 @@ public class AutoBoxDemo7 {
 
         iOb1 = 100;
 
-        iOb2 = iOb1 + (iOb1 / 3);
-        System.out.println("iOb2 after expression: " + iOb2);
+        iOb2 = iOb1 + iOb1 / 3;
+        System.out.println("iOb2 после выражения: " + iOb2);
 
-        i = iOb1 + (iOb1 / 3);
-        System.out.println("i after expression: " + i);
+        i = iOb1 + iOb1 / 3;
+        System.out.println("i до выражения: " + i);
     }
 }

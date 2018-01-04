@@ -1,7 +1,7 @@
 package enumerations;
 
 public enum CoffeeSize2 {
-    // 8, 10 & 16 are passed to the constructor
+    // 8, 10 and 16 are passed to the constructor
     BIG(8), HUGE(10), OVERWHELMING(16);
 
     CoffeeSize2(int ounces) { // constructor
