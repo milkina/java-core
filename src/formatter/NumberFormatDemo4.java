@@ -11,7 +11,7 @@ public class NumberFormatDemo4 {
             nf.setParseIntegerOnly(true);
             System.out.println(nf.parse("1234,567"));
         } catch (ParseException pe) {
-            System.out.println("parse exc");
+            System.out.println("Parse exception");
         }
     }
 }

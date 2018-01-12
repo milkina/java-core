@@ -6,7 +6,6 @@ import java.util.List;
 
 public class CollectionsExample6 {
     public static void main(String[] args) {
-        // Let us create a list of strings
         List<String> list = new ArrayList<>();
         list.add("a");
         list.add("b");

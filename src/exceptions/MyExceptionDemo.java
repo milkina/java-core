@@ -15,6 +15,6 @@ public class MyExceptionDemo {
         if (a > 10) {
             throw new MyException(a, "Some message");
         }
-        System.out.println("Hopмaльнoe завершение.");
+        System.out.println("Нормальное завершение.");
     }
 }
