@@ -1,19 +1,47 @@
 package io;
 
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class SerializeDog {
+
+    public static final String FILE_NAME = "testSer.ser";
+
     public static void main(String[] args) {
-        Collar c = new Collar(3);
-        Dog d = new Dog(c, 8);
-        try {
-            FileOutputStream fs = new FileOutputStream("testSer.ser");
-            ObjectOutputStream os = new ObjectOutputStream(fs);
-            os.writeObject(d);
-            os.close();
+        Collar collar = new Collar(3);
+        Dog dog1 = new Dog(collar);
+        Dog dog2 = new Dog(collar);
+        serialize(dog1, dog2);
+        Dog[] deserializedDogs = deserialize(2);
+
+        System.out.println(dog1.equals(deserializedDogs[0]));
+        System.out.println(dog2.equals(deserializedDogs[1]));
+        System.out.println(deserializedDogs[0].getCollar().equals(deserializedDogs[1].getCollar()));
+    }
+
+    private static void serialize(Dog... dogs) {
+        try (FileOutputStream fs = new FileOutputStream(FILE_NAME);
+             ObjectOutputStream os = new ObjectOutputStream(fs)) {
+            for (Dog dog : dogs) {
+                os.writeObject(dog);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    private static Dog[] deserialize(int dogNumber) {
+        Dog[] dogs = new Dog[dogNumber];
+        try (FileInputStream fs = new FileInputStream(FILE_NAME);
+             ObjectInputStream os = new ObjectInputStream(fs)) {
+            for (int i = 0; i < dogNumber; i++) {
+                dogs[i] = (Dog) os.readObject();
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return dogs;
     }
 }

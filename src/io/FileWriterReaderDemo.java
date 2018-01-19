@@ -1,6 +1,5 @@
 package io;
 
-
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -17,7 +16,7 @@ public class FileWriterReaderDemo {
             fw.write("Learn\nJava!\n");
             fw.flush();
 
-            size = fr.read(in); // read the whole file!
+            size = fr.read(in); // читаем !
             // how many bytes read
             System.out.println("Количество прочитанных символов: "
                     + size + " ");

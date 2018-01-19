@@ -10,7 +10,7 @@ public class ScannerExample {
 
     public static void scanFile() {
         try (FileReader fr = new FileReader(filename);
-             Scanner scan = new Scanner(fr);) {
+             Scanner scan = new Scanner(fr)) {
             while (scan.hasNext()) {
                 if (scan.hasNextInt()) {
                     System.out.println(scan.nextInt() + " :int");

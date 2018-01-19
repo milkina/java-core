@@ -14,22 +14,4 @@ public class Bird implements Serializable {
     public Ring getRing() {
         return ring;
     }
-
-   /* private void writeObject(ObjectOutputStream os) {
-        try {
-            os.defaultWriteObject();
-            os.writeInt(ring.getSize());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void readObject(ObjectInputStream is) {
-        try {
-            is.defaultReadObject();
-            ring = new Ring(is.readInt());
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }*/
 }

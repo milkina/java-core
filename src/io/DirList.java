@@ -4,24 +4,24 @@ import java.io.File;
 
 public class DirList {
     public static void main(String[] args) {
-        String dirname = "src";
-        File f1 = new File(dirname);
+        String catalogName = "src";
+        File catalog = new File(catalogName);
 
-        if (f1.isDirectory()) {
-            System.out.println("Directory of " + dirname);
-            String[] list = f1.list();
+        if (catalog.isDirectory()) {
+            System.out.println("Папка " + catalogName);
+            String[] list = catalog.list();
             if (list != null) {
                 for (String fileName : list) {
-                    File f = new File(dirname + "/" + fileName);
-                    if (f.isDirectory()) {
-                        System.out.println(fileName + " is a directory");
+                    File file = new File(catalogName + "/" + fileName);
+                    if (file.isDirectory()) {
+                        System.out.println("\t" + fileName + " каталог");
                     } else {
-                        System.out.println(fileName + " is a file");
+                        System.out.println("\t" + fileName + " файл");
                     }
                 }
             }
         } else {
-            System.out.println(dirname + " is not a directory");
+            System.out.println(catalogName + " не является каталогом");
         }
     }
 }
