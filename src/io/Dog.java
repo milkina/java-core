@@ -15,12 +15,17 @@ public class Dog implements Serializable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         Dog dog = (Dog) o;
 
-        return theCollar != null ? theCollar.equals(dog.theCollar) : dog.theCollar == null;
+        return theCollar != null
+                ? theCollar.equals(dog.theCollar) : dog.theCollar == null;
 
     }
 

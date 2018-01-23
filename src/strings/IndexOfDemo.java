@@ -2,8 +2,8 @@ package strings;
 
 public class IndexOfDemo {
     public static void main(String[] args) {
-        String s = "Для работы со строками в языке Java используются " +
-                "классы String, StringBuilder, StringBuffer.";
+        String s = "Для работы со строками в языке Java используются "
+                + "классы String, StringBuilder, StringBuffer.";
 
         System.out.println(s);
         System.out.println("indexOf(r) = "

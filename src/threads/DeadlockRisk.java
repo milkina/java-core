@@ -10,20 +10,26 @@ public class DeadlockRisk implements Runnable {
 
     public void doSun() {
         synchronized (scissors) { // May deadlock here
-            System.out.println(Thread.currentThread().getName() + " взяла ножницы");
+            System.out.println(Thread.currentThread().getName()
+                    + " взяла ножницы");
             synchronized (paper) {
-                System.out.println(Thread.currentThread().getName() + " взяла бумагу");
-                System.out.println(Thread.currentThread().getName() + " вырезает солнышко");
+                System.out.println(Thread.currentThread().getName()
+                        + " взяла бумагу");
+                System.out.println(Thread.currentThread().getName()
+                        + " вырезает солнышко");
             }
         }
     }
 
     public void doCloud() {
         synchronized (paper) { // May deadlock here
-            System.out.println(Thread.currentThread().getName() + " взяла бумагу");
+            System.out.println(Thread.currentThread().getName()
+                    + " взяла бумагу");
             synchronized (scissors) {
-                System.out.println(Thread.currentThread().getName() + " взяла ножницы");
-                System.out.println(Thread.currentThread().getName() + " вырезает облачко");
+                System.out.println(Thread.currentThread().getName()
+                        + " взяла ножницы");
+                System.out.println(Thread.currentThread().getName()
+                        + " вырезает облачко");
             }
         }
     }

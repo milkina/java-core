@@ -13,7 +13,7 @@ public class Car implements Cloneable {
     }
 
     /**
-     * Конструктор копирования
+     * Конструктор копирования.
      *
      * @param otherCar
      */
@@ -39,29 +39,38 @@ public class Car implements Cloneable {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         Car car = (Car) o;
 
-        if (getName() != null ? !getName().equals(car.getName()) : car.getName() != null) return false;
-        return getDriver() != null ? getDriver().equals(car.getDriver()) : car.getDriver() == null;
+        if (getName() != null
+                ? !getName().equals(car.getName()) : car.getName() != null) {
+            return false;
+        }
+        return getDriver() != null ? getDriver().equals(car.getDriver())
+                : car.getDriver() == null;
 
     }
 
     @Override
     public int hashCode() {
         int result = getName() != null ? getName().hashCode() : 0;
-        result = 31 * result + (getDriver() != null ? getDriver().hashCode() : 0);
+        result = 31 * result
+                + (getDriver() != null ? getDriver().hashCode() : 0);
         return result;
     }
 
     @Override
     public String toString() {
-        return "Car{" +
-                "name='" + name + '\'' +
-                ", driver=" + driver +
-                '}';
+        return "Car{"
+                + "name='" + name + '\''
+                + ", driver=" + driver
+                + '}';
     }
 
     @Override

@@ -2,8 +2,8 @@ package strings;
 
 public class SortString {
     private static String[] array = {
-            "Для", "работы", "со", "строками", "в", "языке", "Java", "используются",
-            "классы", "String", "StringBuilder", "StringBuffer"
+            "Для", "работы", "со", "строками", "в", "языке", "Java",
+            "используются", "классы", "String", "StringBuilder", "StringBuffer"
     };
 
     public static void main(String[] args) {

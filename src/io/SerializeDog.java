@@ -18,7 +18,9 @@ public class SerializeDog {
 
         System.out.println(dog1.equals(deserializedDogs[0]));
         System.out.println(dog2.equals(deserializedDogs[1]));
-        System.out.println(deserializedDogs[0].getCollar().equals(deserializedDogs[1].getCollar()));
+        Collar desCollar1 = deserializedDogs[0].getCollar();
+        Collar desCollar2 = deserializedDogs[1].getCollar();
+        System.out.println(desCollar1.equals(desCollar2));
     }
 
     private static void serialize(Dog... dogs) {

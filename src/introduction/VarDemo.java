@@ -15,11 +15,6 @@ public class VarDemo {
             //обе переменные х и у доступны в этой области действия
             System.out.println(" x и у : " + x + " " + y);
             x = y * 2;
-            {
-                int z = 34;
-                System.out.println(" x и у : " + x + " " + y);
-                System.out.println(" z: " + z);
-            }
         }
         // y = 100; // ОШИБКА! переменная у недоступна
         // в этой области действия

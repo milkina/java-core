@@ -13,15 +13,18 @@ public class Collar implements Serializable {
         return collarSize;
     }
 
+
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
 
         Collar collar = (Collar) o;
-
         return getCollarSize() == collar.getCollarSize();
-
     }
 
     @Override

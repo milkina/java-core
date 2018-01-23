@@ -10,7 +10,8 @@ import java.util.List;
 
 public class UserDAO extends AbstractDAO<Integer, User> {
     public static final String SQL_SELECT_ALL_USERS = "SELECT * FROM users";
-    public static final String SQL_SELECT_USER_ID = "SELECT * FROM users WHERE id=?";
+    public static final String SQL_SELECT_USER_ID =
+            "SELECT * FROM users WHERE id=?";
 
     @Override
     public List<User> findAll() {
@@ -33,7 +34,8 @@ public class UserDAO extends AbstractDAO<Integer, User> {
     public User findEntityById(Integer id) {
         User user = null;
         try (Connection connection = ConnectorDB.getConnection();
-             PreparedStatement statement = connection.prepareStatement(SQL_SELECT_USER_ID)) {
+             PreparedStatement statement =
+                     connection.prepareStatement(SQL_SELECT_USER_ID)) {
             statement.setInt(1, id);
             ResultSet rs = statement.executeQuery();
             if (rs.next()) {
