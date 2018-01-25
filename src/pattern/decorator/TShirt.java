@@ -21,6 +21,21 @@ public class TShirt extends Cloth implements ManCloth, WomanCloth {
     }
 
     @Override
+    public int calculateTime() {
+        return 0;
+    }
+
+    @Override
+    public void printDetailedPrice() {
+        System.out.println("Футболка: " + getPrice());
+    }
+
+    @Override
+    public void printDetailedTime() {
+        System.out.println("Футболка: " + 0 + " дней");
+    }
+
+    @Override
     public String toString() {
         return "TShirt{} " + super.toString();
     }

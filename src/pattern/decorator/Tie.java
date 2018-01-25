@@ -16,6 +16,21 @@ public class Tie extends Cloth implements ManCloth {
     }
 
     @Override
+    public int calculateTime() {
+        return 0;
+    }
+
+    @Override
+    public void printDetailedPrice() {
+        System.out.println("Галстук: " + getPrice());
+    }
+
+    @Override
+    public void printDetailedTime() {
+        System.out.println("Галстук: " + 0 + " дней");
+    }
+
+    @Override
     public String toString() {
         return "Tie{} " + super.toString();
     }

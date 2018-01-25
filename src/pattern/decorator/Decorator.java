@@ -11,4 +11,19 @@ public abstract class Decorator implements ClothI {
     public int calculatePrice() {
         return cloth.calculatePrice();
     }
+
+    @Override
+    public int calculateTime() {
+        return cloth.calculateTime();
+    }
+
+    @Override
+    public void printDetailedPrice() {
+        cloth.printDetailedPrice();
+    }
+
+    @Override
+    public void printDetailedTime() {
+        cloth.printDetailedTime();
+    }
 }
