@@ -1,0 +1,32 @@
+package pattern.decorator;
+
+public class Tie extends Cloth implements ManCloth {
+    public Tie(Size size, int price, String color) {
+        super(size, price, color);
+    }
+
+    @Override
+    public void wearMen() {
+        System.out.println("Одеваем на мужчину галстук " + this);
+    }
+
+    @Override
+    public int calculatePrice() {
+        return getPrice();
+    }
+
+    @Override
+    public String toString() {
+        return "Tie{} " + super.toString();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return super.equals(o);
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+}
