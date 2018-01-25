@@ -1,5 +1,5 @@
 package pattern.decorator;
 
-public interface ManCloth extends ClothI{
-    void wearMen();
+public interface ManCloth extends Product {
+    void wearMan();
 }

@@ -4,7 +4,7 @@ public class PostDelivery extends Decorator {
     public static final int PRICE = 56;
     public static final int TIME = 2;
 
-    public PostDelivery(ClothI cloth) {
+    public PostDelivery(Product cloth) {
         super(cloth);
     }
 

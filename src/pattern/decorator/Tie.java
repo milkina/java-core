@@ -6,7 +6,7 @@ public class Tie extends Cloth implements ManCloth {
     }
 
     @Override
-    public void wearMen() {
+    public void wearMan() {
         System.out.println("Одеваем на мужчину галстук " + this);
     }
 

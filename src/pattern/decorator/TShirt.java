@@ -6,7 +6,7 @@ public class TShirt extends Cloth implements ManCloth, WomanCloth {
     }
 
     @Override
-    public void wearMen() {
+    public void wearMan() {
         System.out.println("Одеваем на мужчину футболку " + this);
     }
 

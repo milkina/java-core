@@ -1,29 +1,29 @@
 package pattern.decorator;
 
-public abstract class Decorator implements ClothI {
-    protected ClothI cloth;
+public abstract class Decorator implements Product {
+    protected Product product;
 
-    public Decorator(ClothI cloth) {
-        this.cloth = cloth;
+    public Decorator(Product product) {
+        this.product = product;
     }
 
     @Override
     public int calculatePrice() {
-        return cloth.calculatePrice();
+        return product.calculatePrice();
     }
 
     @Override
     public int calculateTime() {
-        return cloth.calculateTime();
+        return product.calculateTime();
     }
 
     @Override
     public void printDetailedPrice() {
-        cloth.printDetailedPrice();
+        product.printDetailedPrice();
     }
 
     @Override
     public void printDetailedTime() {
-        cloth.printDetailedTime();
+        product.printDetailedTime();
     }
 }

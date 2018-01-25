@@ -1,6 +1,6 @@
 package pattern.decorator;
 
-public interface ClothI {
+public interface Product {
     int calculatePrice();
     int calculateTime();
     void printDetailedPrice();

@@ -4,7 +4,7 @@ public class SimpleWrapperDecorator extends Decorator {
     public static final int PRICE = 34;
     public static final int TIME = 1;
 
-    public SimpleWrapperDecorator(ClothI cloth) {
+    public SimpleWrapperDecorator(Product cloth) {
         super(cloth);
     }
 
