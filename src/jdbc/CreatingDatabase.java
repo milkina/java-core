@@ -13,8 +13,7 @@ public class CreatingDatabase {
     private static final String CREATE_DATABASE_QUERY =
             "CREATE DATABASE IF NOT EXISTS " + DB;
 
-    public static void main(String[] args) throws ClassNotFoundException {
-        Class.forName("com.mysql.jdbc.Driver");
+    public static void main(String[] args) {
         Connection connection = null;
         Statement statement = null;
 

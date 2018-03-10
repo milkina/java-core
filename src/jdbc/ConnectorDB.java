@@ -12,12 +12,7 @@ public class ConnectorDB {
         String user = resource.getString("db.user");
         String pass = resource.getString("db.password");
         String dbName = resource.getString("db.name");
-        String driver = resource.getString("db.driver");
-        try {
-            Class.forName(driver);
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+
         return DriverManager.getConnection(url + dbName, user, pass);
     }
 }

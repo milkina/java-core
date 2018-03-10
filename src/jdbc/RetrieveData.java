@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
-import static jdbc.ConnectionData.DRIVER;
 import static jdbc.ConnectionData.URL;
 import static jdbc.ConnectionData.USER;
 import static jdbc.ConnectionData.PASSWORD;
@@ -13,8 +12,7 @@ import static jdbc.ConnectionData.PASSWORD;
 public class RetrieveData {
     private static final String SELECT_QUERY = "SELECT * FROM users;";
 
-    public static void main(String[] args) throws ClassNotFoundException {
-        Class.forName(DRIVER);
+    public static void main(String[] args) {
         try (Connection connection =
                      DriverManager.getConnection(URL, USER, PASSWORD);
              Statement statement = connection.createStatement()) {

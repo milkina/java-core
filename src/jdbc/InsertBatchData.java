@@ -4,14 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 
-import static jdbc.ConnectionData.DRIVER;
 import static jdbc.ConnectionData.URL;
 import static jdbc.ConnectionData.USER;
 import static jdbc.ConnectionData.PASSWORD;
 
 public class InsertBatchData {
-    public static void main(String[] args) throws ClassNotFoundException {
-        Class.forName(DRIVER);
+    public static void main(String[] args) {
         try (Connection connection =
                      DriverManager.getConnection(URL, USER, PASSWORD);
              Statement statement = connection.createStatement()) {
