@@ -11,7 +11,7 @@ public class ScannerDemo1 {
         if (sc.hasNextInt()) {
             // считывает целое число с потока ввода и сохраняем в переменную
             int i = sc.nextInt();
-            System.out.println(i * 2);
+            System.out.println(i);
         } else {
             System.out.println("Вы ввели не целое число");
         }

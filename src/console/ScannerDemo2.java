@@ -8,6 +8,6 @@ public class ScannerDemo2 {
         // если ввести букву s,
         // то случится ошибка во время исполнения
         double i = sc.nextDouble();
-        System.out.println(i / 3);
+        System.out.println(i);
     }
 }
