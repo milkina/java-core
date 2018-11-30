@@ -12,7 +12,6 @@ public class BufferedWriterDemo {
             bufferedWriter.write(text);
             bufferedWriter.newLine();
             bufferedWriter.write(text);
-            bufferedWriter.flush();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
