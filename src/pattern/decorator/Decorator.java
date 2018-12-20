@@ -1,7 +1,7 @@
 package pattern.decorator;
 
 public abstract class Decorator implements Product {
-    protected Product product;
+    private Product product;
 
     public Decorator(Product product) {
         this.product = product;

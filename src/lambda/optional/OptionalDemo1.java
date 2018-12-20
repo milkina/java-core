@@ -12,12 +12,10 @@ public class OptionalDemo1 {
         summary1.ifPresent(System.out::println);
         summary2.ifPresent(System.out::println);
 
-       // System.out.println(emptySummary.get());
         System.out.println(summary1.get());
-       // System.out.println(summary2.get());
 
         String summaryOrDefault = summary2.orElse("Default summary");
         System.out.println(summaryOrDefault);
-        System.out.println(summary2.orElseGet( () -> "Default summary" ));
+        System.out.println(summary2.orElseGet(() -> "Default summary"));
     }
 }

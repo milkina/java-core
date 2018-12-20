@@ -2,19 +2,18 @@ package threads;
 
 public class DeadlockRisk implements Runnable {
     private static class Resource {
-        private int value;
     }
 
-    private Resource scissors = new Resource();
-    private Resource paper = new Resource();
+    private final Resource scissors = new Resource();
+    private final Resource paper = new Resource();
 
     public void doSun() {
         synchronized (scissors) { // May deadlock here
             System.out.println(Thread.currentThread().getName()
-                    + " взяла ножницы");
+                    + " взяла ножницы для вырезания солнышка");
             synchronized (paper) {
                 System.out.println(Thread.currentThread().getName()
-                        + " взяла бумагу");
+                        + " взяла бумагу для вырезания солнышка");
                 System.out.println(Thread.currentThread().getName()
                         + " вырезает солнышко");
             }
@@ -24,10 +23,10 @@ public class DeadlockRisk implements Runnable {
     public void doCloud() {
         synchronized (paper) { // May deadlock here
             System.out.println(Thread.currentThread().getName()
-                    + " взяла бумагу");
+                    + " взяла бумагу для вырезания облачка");
             synchronized (scissors) {
                 System.out.println(Thread.currentThread().getName()
-                        + " взяла ножницы");
+                        + " взяла ножницы для вырезания облачка");
                 System.out.println(Thread.currentThread().getName()
                         + " вырезает облачко");
             }

@@ -8,13 +8,13 @@ public class PlusMinusLocalDateDemo {
         LocalDate newYear2001 = LocalDate.of(2001, 1, 1);
         LocalDate newYear2005 = newYear2001.plusYears(4);
         LocalDate march2001 = newYear2001.plusMonths(2);
-        LocalDate january15_2001 = newYear2001.plusDays(14);
+        LocalDate january15Year2001 = newYear2001.plusDays(14);
         LocalDate lastWeekJanuary2001 = newYear2001.plusWeeks(3);
         LocalDate newYear2006 = newYear2001.plus(5, ChronoUnit.YEARS);
 
         LocalDate newYear2000 = newYear2001.minusYears(1);
         LocalDate nov2000 = newYear2001.minusMonths(2);
-        LocalDate dec30_2000 = newYear2001.minusDays(2);
+        LocalDate dec30Year2000 = newYear2001.minusDays(2);
         LocalDate lastWeekDec2001 = newYear2001.minusWeeks(1);
         LocalDate newYear1999 = newYear2001.minus(2, ChronoUnit.YEARS);
     }
