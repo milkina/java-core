@@ -3,12 +3,12 @@ package exceptions;
 import java.text.NumberFormat;
 import java.text.ParseException;
 
-public class ExceptionDemo4 {
+public class ExceptionDemo5 {
     public static void main(String[] args) {
         try {
-            parseNumber("sss");
+            parseNumber("Какое-то число");
         } catch (ParseException e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
         System.out.println("Конец программы.");
     }
