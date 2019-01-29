@@ -14,9 +14,7 @@ public class FileCopy {
             fileOut = new FileOutputStream("src\\io\\copied_file.txt");
 
             int a;
-            // Копирование содержимого файла file.txt
             while ((a = fileIn.read()) != -1) {
-                // Чтение содержимого файла file.txt и запись в copied_file.txt
                 fileOut.write(a);
             }
         } finally {

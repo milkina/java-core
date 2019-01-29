@@ -14,9 +14,9 @@ public class DirList {
                 for (String fileName : list) {
                     File file = new File(catalogName + "/" + fileName);
                     if (file.isDirectory()) {
-                        System.out.println("\t" + fileName + " каталог");
+                        System.out.printf("\t%s каталог%n", fileName);
                     } else {
-                        System.out.println("\t" + fileName + " файл");
+                        System.out.printf("\t%s файл%n", fileName);
                     }
                 }
             }

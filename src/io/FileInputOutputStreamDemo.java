@@ -9,19 +9,18 @@ import java.io.IOException;
 public class FileInputOutputStreamDemo {
     public static void main(String[] args) {
         try {
-            char[] c = {'a', 'b', 'c'};
-            // Создание текстового файла
+            char[] symbols = {'a', 'b', 'c'};
             OutputStream output = new FileOutputStream("a.txt");
-            for (int i = 0; i < c.length; i++) {
+            for (int i = 0; i < symbols.length; i++) {
                 // Запись каждого символа в текстовый файл
-                output.write(c[i]);
+                output.write(symbols[i]);
             }
             output.close();
 
             InputStream input = new FileInputStream("a.txt");
             int size = input.available();
 
-            for (int j = 0; j < size; j++) {
+            for (int i = 0; i < size; i++) {
                 // Чтение текстового файла посимвольно
                 System.out.print((char) input.read() + " ");
             }

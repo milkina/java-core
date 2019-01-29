@@ -3,24 +3,21 @@ package io;
 import java.io.File;
 
 public class FileDemo {
-    public static void p(String s) {
-        System.out.println(s);
-    }
-
     public static void main(String[] args) {
-        File f1 = new File("src/io");
+        File file = new File("src/io");
 
-        p("File Name: " + f1.getName());
-        p("Path: " + f1.getPath());
-        p("Abs Path: " + f1.getAbsolutePath());
-        p("Parent: " + f1.getParent());
-        p(f1.exists() ? "exists" : "does not exist");
-        p(f1.canWrite() ? "is writeable" : "is not writeable");
-        p(f1.canRead() ? "is readable" : "is not readable");
-        p("is " + (f1.isDirectory() ? "" : "not" + " a directory"));
-        p(f1.isFile() ? "is normal file" : "might be a named pipe");
-        p(f1.isAbsolute() ? "is absolute" : "is not absolute");
-        p("File last modified: " + f1.lastModified());
-        p("File size: " + f1.length() + " Bytes");
+        System.out.println("Имя файла: " + file.getName());
+        System.out.println("Путь: " + file.getPath());
+        System.out.println("Абсолютный путь: " + file.getAbsolutePath());
+        System.out.println("Родительский каталог: " + file.getParent());
+        System.out.println(file.exists() ? "Файл/каталог существует." : "Файл/каталог не существует.");
+        System.out.println(file.canWrite() ? "Файл/каталог доступен для редактирования."
+                : "Файл/каталог не доступен для редактирования.");
+        System.out.println(file.canRead() ? "Файл/каталог доступен для чтения." : "Файл/каталог не доступен для чтения.");
+        System.out.println((file.isDirectory() ? "Каталог." : "Не каталог."));
+        System.out.println(file.isFile() ? "Файл." : "Не файл.");
+        System.out.println(file.isAbsolute() ? "Абсолютный путь." : "Не абсолютный путь.");
+        System.out.println("Дата последнего редактирования: " + file.lastModified());
+        System.out.println("Размер: " + file.length() + " байт.");
     }
 }

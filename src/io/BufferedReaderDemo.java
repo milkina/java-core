@@ -8,7 +8,6 @@ public class BufferedReaderDemo {
     public static void main(String[] args) {
         try (BufferedReader br = new BufferedReader(
                 new FileReader("src\\io\\file.txt"))) {
-            //чтение построчно
             String s;
             while ((s = br.readLine()) != null) {
                 System.out.println(s);
