@@ -7,20 +7,20 @@ import java.io.IOException;
 
 public class FileWriterReaderDemo {
     public static void main(String[] args) {
-        char[] in = new char[50];
+        char[] array = new char[50];
         int size = 0;
         File file = new File("fileWrite.txt");
         try (FileWriter fw = new FileWriter(file);
-             FileReader fr = new FileReader(file);) {
+             FileReader fr = new FileReader(file)) {
 
             fw.write("Learn\nJava!\n");
             fw.flush();
 
-            size = fr.read(in);
+            size = fr.read(array);
             System.out.println("Количество прочитанных символов: "
                     + size + " ");
-            for (char c : in) {
-                System.out.print(c);
+            for (int i = 0; i < size; i++) {
+                System.out.print(array[i]);
             }
         } catch (IOException e) {
             System.out.print(e.getMessage());

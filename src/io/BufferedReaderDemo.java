@@ -8,12 +8,12 @@ public class BufferedReaderDemo {
     public static void main(String[] args) {
         try (BufferedReader br = new BufferedReader(
                 new FileReader("src\\io\\file.txt"))) {
-            String s;
-            while ((s = br.readLine()) != null) {
-                System.out.println(s);
+            String str;
+            while ((str = br.readLine()) != null) {
+                System.out.println(str);
             }
-        } catch (IOException ex) {
-            System.out.println(ex.getMessage());
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
