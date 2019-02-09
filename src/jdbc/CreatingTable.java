@@ -21,7 +21,7 @@ public class CreatingTable {
              Statement statement = connection.createStatement()) {
             statement.executeUpdate(CREATE_TABLE_QUERY);
         } catch (Exception e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 }

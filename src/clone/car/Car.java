@@ -1,4 +1,6 @@
-package clone;
+package clone.car;
+
+import clone.Driver;
 
 /**
  * Created by Tatyana on 09.12.2017.
@@ -74,20 +76,7 @@ public class Car implements Cloneable {
     }
 
     @Override
-    protected Object clone() throws CloneNotSupportedException {
+    public Object clone() throws CloneNotSupportedException {
         return super.clone();
-    }
-
-    public static void main(String[] args) throws CloneNotSupportedException {
-        Car car = new Car("Грузовик", new Driver("Василий", 45));
-        Car clonedCar = (Car) car.clone();
-        System.out.println(car);
-        System.out.println(clonedCar);
-
-        Driver clonedCarDriver = clonedCar.getDriver();
-        clonedCarDriver.setName("Вася");
-
-        System.out.println(car);
-        System.out.println(clonedCar);
     }
 }

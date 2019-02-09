@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import static jdbc.ConnectionData.URL;
 import static jdbc.ConnectionData.USER;
@@ -25,8 +26,8 @@ public class RetrieveDataPreparedStatement {
             while (resultSet.next()) {
                 System.out.printf("%d%23s%n", resultSet.getInt("id"), resultSet.getString("username"));
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

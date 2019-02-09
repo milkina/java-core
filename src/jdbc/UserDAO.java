@@ -25,7 +25,7 @@ public class UserDAO extends AbstractDAO<Integer, User> {
                 users.add(new User(id, name));
             }
         } catch (SQLException e) {
-            System.err.println("SQL Exeption (request or table failed):" + e);
+            System.out.println(e.getMessage());
         }
         return users;
     }
@@ -39,12 +39,11 @@ public class UserDAO extends AbstractDAO<Integer, User> {
             statement.setInt(1, id);
             ResultSet rs = statement.executeQuery();
             if (rs.next()) {
-                id = rs.getInt(1);
                 String name = rs.getString(2);
                 user = new User(id, name);
             }
         } catch (SQLException e) {
-            System.err.println("SQL Exeption (request or table failed):" + e);
+            System.out.println(e.getMessage());
         }
         return user;
     }

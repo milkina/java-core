@@ -1,4 +1,4 @@
-package io;
+package io.serialize;
 
 public class Ring {
     private int size;

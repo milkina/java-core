@@ -2,6 +2,7 @@ package jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 import static jdbc.ConnectionData.URL;
@@ -14,13 +15,13 @@ public class InsertBatchData {
                      DriverManager.getConnection(URL, USER, PASSWORD);
              Statement statement = connection.createStatement()) {
 
-            statement.addBatch("INSERT INTO users (username) VALUES ('sidorov');");
-            statement.addBatch("INSERT INTO users (username) VALUES ('petrov');");
-            statement.addBatch("INSERT INTO users (username) VALUES ('kozlov');");
+            statement.addBatch("INSERT INTO users (username) VALUES ('sidorov')");
+            statement.addBatch("INSERT INTO users (username) VALUES ('petrov')");
+            statement.addBatch("INSERT INTO users (username) VALUES ('kozlov')");
 
             statement.executeBatch();
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

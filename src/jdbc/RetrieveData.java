@@ -3,6 +3,7 @@ package jdbc;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 import static jdbc.ConnectionData.URL;
@@ -25,8 +26,8 @@ public class RetrieveData {
                 String name = resultSet.getString("username");
                 System.out.printf("%-20d%s%n", id, name);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

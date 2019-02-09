@@ -1,13 +1,17 @@
-package io;
+package io.serialize;
+
+import io.serialize.Collar;
+import io.serialize.Dog;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class SerializeDog {
 
-    public static final String FILE_NAME = "testSer.ser";
+    private static final String FILE_NAME = "testSer.ser";
 
     public static void main(String[] args) {
         Collar collar = new Collar(3);
@@ -29,8 +33,8 @@ public class SerializeDog {
             for (Dog dog : dogs) {
                 os.writeObject(dog);
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
         }
     }
 
@@ -41,8 +45,8 @@ public class SerializeDog {
             for (int i = 0; i < dogNumber; i++) {
                 dogs[i] = (Dog) os.readObject();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (IOException | ClassNotFoundException e) {
+            System.out.println(e.getMessage());
         }
         return dogs;
     }

@@ -1,4 +1,4 @@
-package io;
+package io.serialize;
 
 import java.io.Serializable;
 
