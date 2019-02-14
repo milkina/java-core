@@ -1,7 +1,5 @@
 package io.serialize;
 
-import io.serialize.Cat;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;

@@ -22,6 +22,9 @@ public class Car implements Cloneable {
     public Car(Car otherCar) {
         this(otherCar.getName(), otherCar.getDriver());
     }
+ /*   public Car(Car otherCar) throws CloneNotSupportedException {
+        this(otherCar.getName(), otherCar.getDriver().clone());
+    }*/
 
     public String getName() {
         return name;
@@ -76,7 +79,15 @@ public class Car implements Cloneable {
     }
 
     @Override
-    public Object clone() throws CloneNotSupportedException {
-        return super.clone();
+    public Car clone() throws CloneNotSupportedException {
+        return (Car) super.clone();
     }
+
+ /*   @Override
+    public Car clone() throws CloneNotSupportedException {
+        Car newCar = (Car) super.clone();
+        Driver driver = this.getDriver().clone();
+        newCar.setDriver(driver);
+        return newCar;
+    }*/
 }

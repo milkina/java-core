@@ -5,7 +5,7 @@ import clone.car.Car;
 public class CloneCarDemo {
     public static void main(String[] args) throws CloneNotSupportedException {
         Car car = new Car("Грузовик", new Driver("Василий", 45));
-        Car clonedCar = (Car) car.clone();
+        Car clonedCar = car.clone();
         System.out.println("Оригинал:\t" + car);
         System.out.println("Клон:   \t" + clonedCar);
 

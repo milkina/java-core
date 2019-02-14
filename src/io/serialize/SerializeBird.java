@@ -1,8 +1,5 @@
 package io.serialize;
 
-import io.serialize.Bird;
-import io.serialize.Ring;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;

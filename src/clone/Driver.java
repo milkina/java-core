@@ -3,7 +3,7 @@ package clone;
 /**
  * Created by Tatyana on 09.12.2017.
  */
-public class Driver {
+public class Driver implements Cloneable {
     private String name;
     private int age;
 
@@ -60,5 +60,10 @@ public class Driver {
                 + "name='" + name + '\''
                 + ", age=" + age
                 + '}';
+    }
+
+    @Override
+    public Driver clone() throws CloneNotSupportedException {
+        return (Driver) super.clone();
     }
 }

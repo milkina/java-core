@@ -1,8 +1,5 @@
 package io.serialize;
 
-import io.serialize.Collar;
-import io.serialize.Dog;
-
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
