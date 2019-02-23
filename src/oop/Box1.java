@@ -5,12 +5,22 @@ public class Box1 {
     double height;
     double depth;
 
-    // подсчитать объем коробки
+    /**
+     * Подсчитать объем коробки
+     *
+     * @return Объем
+     */
     double getVolume() {
         return width * height * depth;
     }
 
-    // установить размер коробки
+    /**
+     * Установить размер коробки
+     *
+     * @param w - ширина
+     * @param h - высота
+     * @param d - глубина
+     */
     void setDim(double w, double h, double d) {
         width = w;
         height = h;
