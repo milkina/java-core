@@ -9,16 +9,15 @@ public class BreakLoop3 {
             {
                 third:
                 {
-                    System.out.println("Before the break.");
+                    System.out.println("Перед break.");
                     if (t) {
-                        break second; // break out of second block
+                        break second;
                     }
-                    System.out.println("This won't execute");
+                    System.out.println("Этот код не будет выполнен.");
                 }
-                System.out.println("This won't execute");
-
+                System.out.println("Этот код не будет выполнен.");
             }
-            System.out.println("This is after second block.");
+            System.out.println("После второго блока.");
         }
     }
 }

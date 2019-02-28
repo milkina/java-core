@@ -10,7 +10,7 @@ public class BreakLoop1 {
             }
             System.out.println("i: " + i++);
         }
-        System.out.println("Loop complete.");
+        System.out.println("Цикл завершен.");
     }
 }
 

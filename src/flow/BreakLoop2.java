@@ -3,7 +3,7 @@ package flow;
 public class BreakLoop2 {
     public static void main(String[] args) {
         for (int i = 0; i < 3; i++) {
-            System.out.print("Пpoxoд " + i + " : ");
+            System.out.print("Проход " + i + " : ");
             for (int j = 0; j < 100; j++) {
                 if (j == 10) {
                     break;
