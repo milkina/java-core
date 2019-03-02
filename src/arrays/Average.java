@@ -8,6 +8,6 @@ public class Average {
         for (double d : nums) {
             result += d;
         }
-        System.out.println("Average is " + result / nums.length);
+        System.out.println("Среднее арифметическое " + result / nums.length);
     }
 }
