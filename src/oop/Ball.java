@@ -12,10 +12,5 @@ public class Ball {
     static int getCountInstance() {
         return count;
     }
-
-    protected void finalize() {
-        System.out.println("In finalize");
-        count--;
-    }
 }
 

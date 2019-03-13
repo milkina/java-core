@@ -8,7 +8,6 @@ public class StaticVarsDemo {
         StaticVars staticVars1 = new StaticVars();
         StaticVars staticVars2 = new StaticVars();
 
-        System.out.println(staticVars1.a);
         System.out.println(StaticVars.b);
         System.out.println(staticVars1.b);
 

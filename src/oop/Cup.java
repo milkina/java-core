@@ -7,14 +7,6 @@ public class Cup {
         this.spoon = spoon;
     }
 
-    public Spoon getSpoon() {
-        return spoon;
-    }
-
-    public void setSpoon(Spoon spoon) {
-        this.spoon = spoon;
-    }
-
     @Override
     protected void finalize()  {
         System.out.println("Чашка исчезает навсегда");
