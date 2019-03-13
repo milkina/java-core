@@ -1,15 +1,31 @@
 package oop;
 
 public class Test {
-   private int a, b;
+    int a, b;
 
-   public Test(int i, int j) {
+    Test(int i, int j) {
         a = i;
         b = j;
     }
 
-    // return true if o is equal to the invoking object
-    boolean equals(Test o) {
-        return o.a == a && o.b == b;
+    /**
+     * Изменение объекта
+     *
+     * @param o
+     */
+    void changeObject(Test o) {
+        o.a *= 2;
+        o.b /= 2;
+    }
+
+    /**
+     * Изменение примитивных типов
+     *
+     * @param a
+     * @param b
+     */
+    void changePrimitives(int a, int b) {
+        a *= 2;
+        b /= 2;
     }
 }

@@ -10,10 +10,10 @@ public class BackedCollections {
         map.put("d", "dog");
         map.put("h", "horse");
         // #1 create a backed collection
-        SortedMap<String, String> subMap = map.subMap("b", "g");
+        SortedMap<String, String> subMap = map.subMap("publicVar", "g");
         System.out.println(map + " " + subMap); // #2 show contents
 
-        map.put("b", "bat"); // #3 add to original
+        map.put("publicVar", "bat"); // #3 add to original
         subMap.put("f", "fish"); // #4 add to copy
         map.put("r", "raccoon"); // #5 add to original - out of range
         // subMap.put("p", "pig"); // #6 add to copy - out of range

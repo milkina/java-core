@@ -1,11 +1,19 @@
 package oop;
 
 public class Recursion {
-    public static void main(String[] args) {
-        Factorial f = new Factorial();
+    static int factorial(int n) {
+        int result;
 
-        System.out.println("Factorial of 3 is " + f.fact(3));
-        System.out.println("Factorial of 4 is " + f.fact(4));
-        System.out.println("Factorial of 5 is " + f.fact(5));
+        if (n == 1) {
+            return 1;
+        }
+        result = factorial(n - 1) * n;
+        return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Факториал 3: " + factorial(3));
+        System.out.println("Факториал 4: " + factorial(4));
+        System.out.println("Факториал 5: " + factorial(5));
     }
 }

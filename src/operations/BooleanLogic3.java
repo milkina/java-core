@@ -6,6 +6,6 @@ public class BooleanLogic3 {
         int b = 2;
         int x = 3;
         System.out.print(a < x && x < b);
-       // System.out.print(a < x < b);//Ошибка компиляции
+       // System.out.print(a < x < publicVar);//Ошибка компиляции
     }
 }

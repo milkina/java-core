@@ -28,7 +28,6 @@ public class Box6 {
         depth = len;
     }
 
-    // подсчитать объем коробки
     double getVolume() {
         return width * height * depth;
     }

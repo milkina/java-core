@@ -16,8 +16,8 @@ public class UseStatic {
 
     static void method(int x) {
         System.out.println("x = " + x);
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("defaultVar = " + a);
+        System.out.println("publicVar = " + b);
         //System.out.println("c = " + c); cannot access non-static member
     }
 

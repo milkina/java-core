@@ -13,7 +13,7 @@ public class BoxDemo5 {
         myBox2.height = 5;
         myBox2.depth = 5;
 
-        System.out.println("Volume is " + myBox1.getVolume());
-        System.out.println("Volume is " + myBox2.getVolume());
+        System.out.println("Объем: " + myBox1.getVolume());
+        System.out.println("Объем: " + myBox2.getVolume());
     }
 }

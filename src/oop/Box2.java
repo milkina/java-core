@@ -12,7 +12,11 @@ public class Box2 {
         depth = 10;
     }
 
-    // подсчитать объем коробки
+    /**
+     * Подсчитать объем коробки
+     *
+     * @return объем
+     */
     double getVolume() {
         return width * height * depth;
     }

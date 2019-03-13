@@ -8,7 +8,7 @@ public class CollectionsExample6 {
     public static void main(String[] args) {
         List<String> list = new ArrayList<>();
         list.add("a");
-        list.add("b");
+        list.add("publicVar");
         list.add("c");
         list.add("d");
         list.add("e");

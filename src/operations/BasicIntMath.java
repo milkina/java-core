@@ -5,6 +5,6 @@ public class BasicIntMath {
         int a = 4 + 5 - 2 * 3;
         int b = 4 + (5 - 2) * 3;
         System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("publicVar = " + b);
     }
 }

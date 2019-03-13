@@ -5,7 +5,7 @@ public class AutoBoxDemo8 {
         Boolean b = true;
 
         if (b) {
-            System.out.println("b is true");
+            System.out.println("publicVar is true");
         }
 
         Character ch = 'x';

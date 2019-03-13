@@ -5,8 +5,6 @@ package oop;
  */
 public class ToyDemo {
     public static void main(String[] args) {
-        Toy toy = new Toy("Doll", 34);
-        System.out.println(toy.name);
-        System.out.println(toy.cost);
+        Toy toy = new Toy("Кукла", 34, "Disney", 3);
     }
 }

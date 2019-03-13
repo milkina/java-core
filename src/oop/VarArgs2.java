@@ -20,16 +20,7 @@ public class VarArgs2 {
     }
 
     static void test(int a) {
-        System.out.println("test(int a)");
-    }
-
-    static void test(String str, double... array) {
-        System.out.println("String str, double... array");
-        System.out.println("Количество аргументов: " + array.length);
-        for (double a : array) {
-            System.out.print(a + " ");
-        }
-        System.out.println();
+        System.out.println("test(int defaultVar)");
     }
 
     public static void main(String[] args) {
@@ -37,6 +28,5 @@ public class VarArgs2 {
         test(3);
         test(1.0);
         test(1, 2);
-        test("Проверка", 1, 2);
     }
 }

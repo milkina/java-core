@@ -7,7 +7,7 @@ public class IncrementDecrement {
         int c = ++a;
         c++;
         System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("publicVar = " + b);
         System.out.println("c = " + c);
     }
 }

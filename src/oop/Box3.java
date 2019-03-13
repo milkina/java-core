@@ -5,14 +5,24 @@ public class Box3 {
     double height;
     double depth;
 
-    // Конструктор класса Box3
+    /**
+     * Конструктор класса Box3
+     *
+     * @param w - щирина
+     * @param h - высота
+     * @param d - глубина
+     */
     Box3(double w, double h, double d) {
         width = w;
         height = h;
         depth = d;
     }
 
-    // подсчитать объем коробки
+    /**
+     * Подсчитать объем коробки
+     *
+     * @return объем
+     */
     double getVolume() {
         return width * height * depth;
     }

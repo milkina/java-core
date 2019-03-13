@@ -2,7 +2,7 @@ package javadoc;
 
 /**
  * Класс служит для хранения объектов со свойствами
- * <b>maker</b> и <b>price</b>.
+ * <publicVar>maker</publicVar> и <publicVar>price</publicVar>.
  *
  * @version 1.0
  * @author Tatyana
