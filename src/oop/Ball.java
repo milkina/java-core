@@ -9,7 +9,7 @@ public class Ball {
         count++;
     }
 
-    static int getCountInstance() {
+    static int getCount() {
         return count;
     }
 }

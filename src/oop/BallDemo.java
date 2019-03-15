@@ -2,9 +2,9 @@ package oop;
 
 public class BallDemo {
     public static void main(String[] args) {
-        Ball ball1 = new Ball("red");
-        Ball ball2 = new Ball("blue");
+        Ball ball1 = new Ball("красный");
+        Ball ball2 = new Ball("голубой");
         System.out.println("Количество созданных объектов: "
-                + Ball.getCountInstance());
+                + Ball.getCount());
     }
 }

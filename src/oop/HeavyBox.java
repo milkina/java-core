@@ -1,7 +1,7 @@
 package oop;
 
 public class HeavyBox extends Box6 {
-    int weight; // вес коробки
+    int weight;
 
     public HeavyBox() {
     }

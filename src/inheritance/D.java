@@ -8,12 +8,6 @@ public class D extends C {
         super.i = b;
     }
 
-    public void print(String str) {
-        System.out.println(str);
-        System.out.println("i = " + i);
-        System.out.println("super.i = " + super.i);
-    }
-
     public void print() {
         System.out.println("D.i = " + i);
         super.print();

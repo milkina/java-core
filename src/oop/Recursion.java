@@ -4,7 +4,7 @@ public class Recursion {
     static int factorial(int n) {
         int result;
 
-        if (n == 1) {
+        if (n < 2) {
             return 1;
         }
         result = factorial(n - 1) * n;

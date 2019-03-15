@@ -21,7 +21,6 @@ public class StaticMethod {
         //nonStaticMethod();
         StaticMethod useStatic = new StaticMethod();
         useStatic.nonStaticMethod();
-        System.out.println("nonStaticVar = " + useStatic.nonStaticVar);
         useStatic.staticMethod(67);
     }
 }
