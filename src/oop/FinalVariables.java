@@ -8,8 +8,8 @@ public class FinalVariables {
         //  FILE_NEW = 2;
         final String str;
         str = "someString";
-        //  str ="";
-        //  d=4;
+        //  str = "";
+        //  d = 4;
         System.out.println("FILE_NEW = " + FILE_NEW);
         System.out.println("str = " + str);
         System.out.println("d = " + d);

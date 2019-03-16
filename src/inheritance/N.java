@@ -9,8 +9,7 @@ public class N extends M {
     }
 
     public void print() {
-        System.out.println("Print in N");
-        System.out.println("k = " + k);
+        System.out.println("Метод N k = " + k);
     }
 
     public void someMethod() {

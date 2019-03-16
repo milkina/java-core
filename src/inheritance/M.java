@@ -10,8 +10,6 @@ public class M {
     }
 
     public void print() {
-        System.out.println("Print in M");
-        System.out.println("i = " + i);
-        System.out.println("j = " + j);
+        System.out.println("Метод M i = " + i + " j = " + j);
     }
 }
