@@ -1,4 +1,7 @@
 package oop.p2;
 
-public class Tea {
+//import oop.p1.HotBeverage;
+
+public class Tea //extends HotBeverage
+{
 }

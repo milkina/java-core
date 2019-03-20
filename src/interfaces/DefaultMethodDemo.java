@@ -6,7 +6,6 @@ public class DefaultMethodDemo {
         SomeInterface obj2 = new SomeInterfaceImpl2();
 
         System.out.println(obj1.defaultMethod());
-
         System.out.println(obj2.defaultMethod());
     }
 }

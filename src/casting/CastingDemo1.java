@@ -10,7 +10,7 @@ public class CastingDemo1 {
         // System.out.println(box1.weight);
 
         HeavyBox1 heavyBox1 = (HeavyBox1) box1;
-        System.out.println("Weight: " + heavyBox1.weight);
+        System.out.println("Вес: " + heavyBox1.weight);
 
         Box6 box2 = new ColorBox();
         HeavyBox1 heavyBox2 = (HeavyBox1) box2; //ClassCastException
