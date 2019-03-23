@@ -1,19 +1,19 @@
 package enumerations;
 
 public enum CoffeeSize3 {
-    BIG(8), HUGE, OVERWHELMING(16);
+    BIG(100), HUGE, OVERWHELMING(200);
 
-    CoffeeSize3(int ounces) { // constructor
-        this.ounces = ounces;
+    private int ml;
+
+    CoffeeSize3(int ml) {
+        this.ml = ml;
     }
 
     CoffeeSize3() {
-        this.ounces = -1;
+        this.ml = -1;
     }
 
-    private int ounces;
-
-    public int getOunces() {
-        return ounces;
+    public int getMl() {
+        return ml;
     }
 }

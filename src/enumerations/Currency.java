@@ -10,6 +10,6 @@ public enum Currency implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Enum in Java implement interfaces");
+        System.out.println("Перечисления в Java могут реализовывать интерфейсы");
     }
 }

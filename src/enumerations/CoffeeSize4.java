@@ -1,29 +1,26 @@
 package enumerations;
 
 public enum CoffeeSize4 {
-    BIG(8),
-    HUGE(10),
-    OVERWHELMING(16) {
-        // start a code block that defines the "body" for this constant
+    BIG(100),
+    HUGE(150),
+    OVERWHELMING(200) {
+        @Override
         public String getLidCode() {
-            // override the method defined in CoffeeSize
             return "A";
         }
-    }; // the semicolon is REQUIRED when more code follows
+    };
 
-    CoffeeSize4(int ounces) {
-        this.ounces = ounces;
+    private int ml;
+
+    CoffeeSize4(int ml) {
+        this.ml = ml;
     }
 
-    private int ounces;
-
-    public int getOunces() {
-        return ounces;
+    public int getMl() {
+        return ml;
     }
 
-    // this method is overridden by the OVERWHELMING constant
     public String getLidCode() {
-        // the default value we want to return for CoffeeSize4 constants
         return "B";
     }
 }

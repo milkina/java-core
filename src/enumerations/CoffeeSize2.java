@@ -1,16 +1,16 @@
 package enumerations;
 
 public enum CoffeeSize2 {
-    // 8, 10 and 16 are passed to the constructor
-    BIG(8), HUGE(10), OVERWHELMING(16);
+    // 100, 150 и 200 передаются в конструктор
+    BIG(100), HUGE(150), OVERWHELMING(200);
 
-    CoffeeSize2(int ounces) { // constructor
-        this.ounces = ounces;
+    private int ml;
+
+    CoffeeSize2(int ml) {
+        this.ml = ml;
     }
 
-    private int ounces; // an instance variable
-
-    public int getOunces() {
-        return ounces;
+    public int getMl() {
+        return ml;
     }
 }
