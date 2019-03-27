@@ -1,6 +1,6 @@
 package wrappers;
 
-public class AutoBoxDemo5 {
+public class AutoBoxDemoCaching {
     public static void main(String[] args) {
         Integer i1 = 23;
         Integer i2 = 23;

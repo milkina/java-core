@@ -21,7 +21,7 @@ public class ResourceBundleDemo2 {
         ResourceBundle rb = ResourceBundle.getBundle("text", current);
         for (String key : rb.keySet()) {
             String value = rb.getString(key);
-            value = new String(value.getBytes("ISO-8859-1"), "UTF-8");
+            //value = new String(value.getBytes("ISO-8859-1"), "UTF-8");
             System.out.println(value);
         }
         System.out.println();

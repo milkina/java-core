@@ -7,8 +7,8 @@ public class InstantDemo3 {
         Instant now = Instant.now();
         Instant fiveSecondsAfterEpoch = Instant.ofEpochSecond(5);
 
-        System.out.println(now.isAfter(fiveSecondsAfterEpoch));
-        System.out.println(now.isBefore(fiveSecondsAfterEpoch));
-        System.out.println(now.equals(fiveSecondsAfterEpoch));
+        System.out.println("now.isAfter(fiveSecondsAfterEpoch)? " + now.isAfter(fiveSecondsAfterEpoch));
+        System.out.println("now.isBefore(fiveSecondsAfterEpoch)? " + now.isBefore(fiveSecondsAfterEpoch));
+        System.out.println("now.equals(fiveSecondsAfterEpoch)? " + now.equals(fiveSecondsAfterEpoch));
     }
 }

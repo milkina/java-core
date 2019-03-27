@@ -19,5 +19,17 @@ public class PlusMinusLocalTimeDemo {
         LocalTime minusSeconds = fiveThirty.minusSeconds(2);
         LocalTime minusNanos = fiveThirty.minusNanos(1);
         LocalTime fiveTwenty = fiveThirty.minus(10, ChronoUnit.MINUTES);
+
+        System.out.println("sixThirty: " + sixThirty);
+        System.out.println("fiveForty: " + fiveForty);
+        System.out.println("plusSeconds: " + plusSeconds);
+        System.out.println("plusNanos: " + plusNanos);
+        System.out.println("sevenThirty: " + sevenThirty);
+
+        System.out.println("fourThirty: " + fourThirty);
+        System.out.println("fiveTen: " + fiveTen);
+        System.out.println("minusSeconds: " + minusSeconds);
+        System.out.println("minusNanos: " + minusNanos);
+        System.out.println("fiveTwenty: " + fiveTwenty);
     }
 }

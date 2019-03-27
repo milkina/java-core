@@ -14,5 +14,11 @@ public class WithLocalTimeDemo {
 
         // Можно использовать сцепление методов
         LocalTime secondsNano = noon.withSecond(20).withNano(999999);
+
+        System.out.println("ten: " + ten);
+        System.out.println("eight: " + eight);
+        System.out.println("twelveThirty: " + twelveThirty);
+        System.out.println("thirtyTwoSeconds: " + thirtyTwoSeconds);
+        System.out.println("secondsNano: " + secondsNano);
     }
 }

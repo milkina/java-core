@@ -1,5 +1,7 @@
 package strings;
 
+import java.util.Arrays;
+
 public class SortString {
     private static String[] array = {
             "Для", "работы", "со", "строками", "в", "языке", "Java",
@@ -15,7 +17,7 @@ public class SortString {
                     array[i] = t;
                 }
             }
-            System.out.println(array[j]);
         }
+        System.out.println(Arrays.toString(array));
     }
 }

@@ -17,5 +17,17 @@ public class PlusMinusLocalDateDemo {
         LocalDate dec30Year2000 = newYear2001.minusDays(2);
         LocalDate lastWeekDec2001 = newYear2001.minusWeeks(1);
         LocalDate newYear1999 = newYear2001.minus(2, ChronoUnit.YEARS);
+
+        System.out.println("newYear2005: " + newYear2005);
+        System.out.println("march2001: " + march2001);
+        System.out.println("january15Year2001: " + january15Year2001);
+        System.out.println("lastWeekJanuary2001: " + lastWeekJanuary2001);
+        System.out.println("newYear2006: " + newYear2006);
+
+        System.out.println("newYear2000: " + newYear2000);
+        System.out.println("nov2000: " + nov2000);
+        System.out.println("dec30Year2000: " + dec30Year2000);
+        System.out.println("lastWeekDec2001: " + lastWeekDec2001);
+        System.out.println("newYear1999: " + newYear1999);
     }
 }

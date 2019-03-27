@@ -6,8 +6,8 @@ public class IndexOfDemo {
                 + "классы String, StringBuilder, StringBuffer.";
 
         System.out.println(s);
-        System.out.println("indexOf(r) = "
-                + s.indexOf('r'));
+        System.out.println("indexOf(S) = "
+                + s.indexOf('S'));
         System.out.println("lastIndexOf(r) = "
                 + s.lastIndexOf('r'));
         System.out.println("indexOf(String) = "

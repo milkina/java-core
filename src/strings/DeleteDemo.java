@@ -5,9 +5,9 @@ public class DeleteDemo {
         StringBuilder sb = new StringBuilder("This is a test.");
 
         sb.delete(4, 7);
-        System.out.println("After delete: " + sb);
+        System.out.println("После delete: " + sb);
 
         sb.deleteCharAt(0);
-        System.out.println("After deleteCharAt: " + sb);
+        System.out.println("После deleteCharAt: " + sb);
     }
 }
