@@ -2,14 +2,10 @@ package generics;
 
 public class SimpleGen {
     public static void main(String[] args) {
-        TwoGen<Integer, String> tgObj = new TwoGen<>(88, "Generics");
+        TwoGen<Integer, String> twoGen = new TwoGen<>(88, "Generics");
 
-        tgObj.showTypes();
-
-        int v = tgObj.getOb1();
-        System.out.println("value: " + v);
-
-        String str = tgObj.getOb2();
-        System.out.println("value: " + str);
+        twoGen.showTypes();
+        System.out.println("Значение T: " + twoGen.getObT());
+        System.out.println("Значение V: " + twoGen.getObV());
     }
 }

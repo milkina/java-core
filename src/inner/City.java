@@ -1,16 +1,16 @@
 package inner;
 
 public class City {
-    static class District {
-        void go() {
+    public static class District {
+        public void go() {
             System.out.println("Go to the District.");
         }
     }
 
     public static void main(String[] args) {
-        Town4.Street street = new Town4.Street(); // both class names
+        Town4.Street street = new Town4.Street();
         street.go();
-        District district = new District(); // access the enclosed class
+        District district = new District();
         district.go();
     }
 }

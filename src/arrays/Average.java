@@ -11,3 +11,4 @@ public class Average {
         System.out.println("Среднее арифметическое " + result / nums.length);
     }
 }
+

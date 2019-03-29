@@ -4,7 +4,7 @@ public class Average<T extends Number> {
     private T[] array;
 
     public Average(T[] array) {
-        this.array = array.clone();
+        this.array = array;
     }
 
     public double average() {

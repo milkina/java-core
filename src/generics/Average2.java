@@ -17,7 +17,7 @@ public class Average2<T extends Number> {
         return sum / array.length;
     }
 
-    boolean sameAvg(Average2<?> ob) {
+    public boolean sameAvg(Average2<?> ob) {
         return average() == ob.average();
     }
 }

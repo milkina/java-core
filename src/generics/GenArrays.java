@@ -2,11 +2,10 @@ package generics;
 
 public class GenArrays {
     public static void main(String[] args) {
-        Integer[] n = {1, 2, 3, 4, 5};
         // Нельзя создать массив специфичных для типа обобщенных ссылок.
-        // Gen2<Integer> gens[] = new Gen2<Integer>[10]; // Неверно!
-        // Это верно.
-        Gen2<?>[] gens = new Gen2<?>[10]; // ОК
-        gens[0] = new Gen2<>(34, n);
+        // GenericSub<Integer>[] gens = new GenericSub<Integer>[10];
+
+        GenericSub<?>[] gens = new GenericSub<?>[10];
+        gens[0] = new GenericSub<>(34);
     }
 }

@@ -1,14 +1,14 @@
 package generics;
 
 public class GenConstructor {
-    private double val;
+    private double value;
 
-    <T extends Number> GenConstructor(T arg) {
-        val = arg.doubleValue();
+    public <T extends Number> GenConstructor(T arg) {
+        value = arg.doubleValue();
     }
 
-    void showValue() {
-        System.out.println("value: " + val);
+    public void showValue() {
+        System.out.println("value: " + value);
     }
 }
 

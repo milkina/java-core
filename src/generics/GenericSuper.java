@@ -3,11 +3,11 @@ package generics;
 public class GenericSuper<T> {
     private T ob;
 
-    GenericSuper(T ob) {
+    public GenericSuper(T ob) {
         this.ob = ob;
     }
 
-    T getOb() {
+    private T getOb() {
         return ob;
     }
 }

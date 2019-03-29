@@ -1,27 +1,24 @@
 package generics;
 
 public class TwoGen<T, V> {
-    private T ob1;
-    private V ob2;
+    private T obT;
+    private V obV;
 
-    TwoGen(T o1, V o2) {
-        ob1 = o1;
-        ob2 = o2;
+    public TwoGen(T obT, V obV) {
+        this.obT = obT;
+        this.obV = obV;
     }
 
-    void showTypes() {
-        System.out.println("Type of T is "
-                + ob1.getClass().getName());
-
-        System.out.println("Type of V is "
-                + ob2.getClass().getName());
+    public void showTypes() {
+        System.out.println("Тип T: " + obT.getClass().getName());
+        System.out.println("Тип V: " + obV.getClass().getName());
     }
 
-    T getOb1() {
-        return ob1;
+    public T getObT() {
+        return obT;
     }
 
-    V getOb2() {
-        return ob2;
+    public V getObV() {
+        return obV;
     }
 }
