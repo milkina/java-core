@@ -1,39 +1,36 @@
 package lambda.car;
 
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class CarDemo1 {
     public static void main(String[] args) {
-        List<Car> cars = new ArrayList<>();
-        cars.add(new Car(CarTypes.COMPACT, 34000));
-        cars.add(new Car(CarTypes.SPORT, 44000));
-        cars.add(new Car(CarTypes.COMPACT, 14000));
-        cars.add(new Car(CarTypes.COMPACT, 10000));
-
+        Car[] cars = {
+                new Car(CarTypes.COMPACT, 34000),
+                new Car(CarTypes.SPORT, 44000),
+                new Car(CarTypes.COMPACT, 14000),
+                new Car(CarTypes.COMPACT, 10000),
+        };
         CarDemo1 carDemo = new CarDemo1();
-        System.out.println(carDemo.findCompactCars(cars));
-        System.out.println(carDemo.findExpensiveCars(cars));
+        System.out.println(carDemo.getCompactCarsNumber(cars));
+        System.out.println(carDemo.getExpensiveCarsNumber(cars));
     }
 
-    private List<Car> findCompactCars(List<Car> cars) {
-        List<Car> compactCars = new ArrayList<>();
+    private int getCompactCarsNumber(Car[] cars) {
+        int result = 0;
         for (Car car : cars) {
             if (car.getType().equals(CarTypes.COMPACT)) {
-                compactCars.add(car);
+                result++;
             }
         }
-        return compactCars;
+        return result;
     }
 
-    private List<Car> findExpensiveCars(List<Car> cars) {
-        List<Car> twentyKCars = new ArrayList<>();
+    private int getExpensiveCarsNumber(Car[] cars) {
+        int result = 0;
         for (Car car : cars) {
             if (car.getCost() > 20000) {
-                twentyKCars.add(car);
+                result++;
             }
         }
-        return twentyKCars;
+        return result;
     }
 }

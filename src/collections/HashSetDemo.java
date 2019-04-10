@@ -7,12 +7,11 @@ public class HashSetDemo {
     public static void main(String[] args) {
         Set<String> hashSet = new HashSet<>();
 
-        hashSet.add("Бета");
-        hashSet.add("Aльфa");
-        hashSet.add("Этa");
-        hashSet.add("Гaммa");
-        hashSet.add("Эпсилон");
-        hashSet.add("Oмeгa");
+        hashSet.add("Харьков");
+        hashSet.add("Киев");
+        hashSet.add("Львов");
+        hashSet.add("Кременчуг");
+        hashSet.add("Харьков");
 
         System.out.println(hashSet);
     }

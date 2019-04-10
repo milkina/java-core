@@ -7,12 +7,11 @@ public class LinkedHashSetDemo {
     public static void main(String[] args) {
         Set<String> linkedHashSet = new LinkedHashSet<>();
 
-        linkedHashSet.add("Бета");
-        linkedHashSet.add("Aльфa");
-        linkedHashSet.add("Этa");
-        linkedHashSet.add("Гaммa");
-        linkedHashSet.add("Эпсилон");
-        linkedHashSet.add("Oмeгa");
+        linkedHashSet.add("Харьков");
+        linkedHashSet.add("Киев");
+        linkedHashSet.add("Львов");
+        linkedHashSet.add("Кременчуг");
+        linkedHashSet.add("Харьков");
 
         System.out.println(linkedHashSet);
     }

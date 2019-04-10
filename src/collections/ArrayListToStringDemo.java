@@ -1,20 +1,11 @@
 package collections;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ArrayListDemo4 {
+public class ArrayListToStringDemo {
     public static void main(String[] args) {
-        List<String> arrayList = new ArrayList<>();
-
-        arrayList.add("C");
-        arrayList.add("A");
-        arrayList.add("E");
-        arrayList.add("B");
-        arrayList.add("D");
-        arrayList.add("F");
-        arrayList.add(null);
+        List<String> arrayList = List.of("C", "A", "E", "B", "D", "F");
         //1 вариант
         Object[] objectArray = arrayList.toArray();
         System.out.println(Arrays.toString(objectArray));

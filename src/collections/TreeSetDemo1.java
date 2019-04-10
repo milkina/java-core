@@ -7,12 +7,11 @@ public class TreeSetDemo1 {
     public static void main(String[] args) {
         SortedSet<String> treeSet = new TreeSet<>();
 
-        treeSet.add("Бета");
-        treeSet.add("Aльфa");
-        treeSet.add("Этa");
-        treeSet.add("Гaммa");
-        treeSet.add("Эпсилон");
-        treeSet.add("Омeгa");
+        treeSet.add("Харьков");
+        treeSet.add("Киев");
+        treeSet.add("Львов");
+        treeSet.add("Кременчуг");
+        treeSet.add("Харьков");
 
         System.out.println(treeSet);
     }

@@ -3,10 +3,10 @@ package collections;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListDemo3 {
+public class ArrayListRetainAllDemo {
     public static void main(String[] args) {
         List<String> arrayList1 = new ArrayList<>();
-        List<String> arrayList2 = new ArrayList<>();
+        List<String> arrayList2 = List.of("F", "FF", "E");
 
         arrayList1.add("A");
         arrayList1.add("A");
@@ -16,10 +16,6 @@ public class ArrayListDemo3 {
         arrayList1.add("E");
         arrayList1.add("F");
         arrayList1.add("F");
-
-        arrayList2.add("F");
-        arrayList2.add("FF");
-        arrayList2.add("E");
 
         arrayList1.retainAll(arrayList2);
         System.out.println(arrayList1);
