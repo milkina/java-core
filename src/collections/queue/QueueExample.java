@@ -1,4 +1,4 @@
-package collections;
+package collections.queue;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -10,8 +10,12 @@ public class QueueExample {
         queue.offer("Киев");
         queue.offer("Кременчуг");
         queue.offer("Львов");
-        while (queue.size() > 0) {
-            System.out.print(queue.poll() + " ");
+
+        System.out.println(queue.peek());
+
+        String town;
+        while ((town = queue.poll()) != null) {
+            System.out.println(town);
         }
     }
 }

@@ -1,4 +1,4 @@
-package collections;
+package collections.queue;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -16,10 +16,10 @@ public class ArrayDequeExample {
         }
         System.out.println();
 
-        queue.add("A");
-        queue.add("B");
-        queue.add("C");
-        queue.add("D");
+        queue.offer("A");
+        queue.offer("B");
+        queue.offer("C");
+        queue.offer("D");
         while (!queue.isEmpty()) {
             System.out.print(queue.remove() + " ");
         }

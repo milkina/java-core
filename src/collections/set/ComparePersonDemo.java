@@ -1,4 +1,4 @@
-package collections;
+package collections.set;
 
 import java.util.SortedSet;
 import java.util.TreeSet;
@@ -10,8 +10,6 @@ public class ComparePersonDemo {
         set.add(new Person("Маша", "Петрова", 23));
         set.add(new Person("Даша", "Сидорова", 34));
         set.add(new Person("Вася", "Иванов", 25));
-        for (Person person : set) {
-            System.out.println(person);
-        }
+        set.forEach(System.out::println);
     }
 }

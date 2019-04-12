@@ -1,4 +1,4 @@
-package collections;
+package collections.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,5 +23,6 @@ public class ArrayListAddDemo {
         System.out.println("Размер arrayList после добавления: "
                 + arrayList.size());
         System.out.println("Содержимое arrayList: " + arrayList);
+        System.out.println(arrayList.get(0));
     }
 }

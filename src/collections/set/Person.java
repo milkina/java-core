@@ -1,4 +1,4 @@
-package collections;
+package collections.set;
 
 public class Person implements Comparable<Person> {
     private String firstName;
