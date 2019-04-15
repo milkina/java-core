@@ -12,13 +12,10 @@ public class MyCheckedCollection {
         myList.add("two");
         myList.add("three");
         myList.add("four");
-        Collection chkList =
+        Collection checkList =
                 Collections.checkedCollection(myList, String.class);
-        System.out.println("Checked list content: " + chkList);
-        //you can add any type of elements to myList object
+        System.out.println("Checked list content: " + checkList);
         myList.add(10);
-        //you cannot add any type of elements to chkList object, doing so
-        //throws ClassCastException
-        chkList.add(10); //throws ClassCastException
+        checkList.add(10); //throws ClassCastException
     }
 }
