@@ -1,12 +1,12 @@
 package exceptions;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class SubClass extends SuperClass {
     public SubClass() throws IOException, ArithmeticException {
     }
 
-    public void start() throws IOException {
-        //throw new Exception("Not able to start");
+    public void start() throws FileNotFoundException {
     }
 }

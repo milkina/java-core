@@ -1,9 +1,6 @@
 package exceptions;
 
 public class FinallyUse {
-    /**
-     * Выход из метода через исключение
-     */
     public static void procA() {
         try {
             System.out.println("Внутри procA");
@@ -13,9 +10,6 @@ public class FinallyUse {
         }
     }
 
-    /**
-     * Возврат изнутри try-блока
-     */
     public static void procB() {
         try {
             System.out.println("Внутри procB");
@@ -25,9 +19,6 @@ public class FinallyUse {
         }
     }
 
-    /**
-     * Нормальное выполнение try-блока
-     */
     public static void procC() {
         try {
             System.out.println("Внутри procC");
