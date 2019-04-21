@@ -17,12 +17,12 @@ public class ArrayListRemoveAllDemo {
         arrayList.add(1, "A2");
         arrayList.set(0, "C2");
 
-        List<String> removeElements = List.of("C2", "A2", "AA", "F");
+    /*    List<String> removeElements = List.of("C2", "A2", "AA", "F");
         System.out.println("Содержимое arrayList до removeAll: "
                 + arrayList);
 
         arrayList.removeAll(removeElements);
         System.out.println("Содержимое arrayList после removeAll: "
-                + arrayList);
+                + arrayList);*/
     }
 }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ArrayListRetainAllDemo {
     public static void main(String[] args) {
-        List<String> arrayList1 = new ArrayList<>();
+      /*  List<String> arrayList1 = new ArrayList<>();
         List<String> arrayList2 = List.of("F", "FF", "E");
 
         arrayList1.add("A");
@@ -18,6 +18,6 @@ public class ArrayListRetainAllDemo {
         arrayList1.add("F");
 
         arrayList1.retainAll(arrayList2);
-        System.out.println(arrayList1);
+        System.out.println(arrayList1);*/
     }
 }

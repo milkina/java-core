@@ -7,7 +7,7 @@ public class CollectionsGenericDemo {
     public static void main(String[] args) {
         //  List<Object> list1 = new ArrayList<String>();НЕТ!
 
-        List<String> stringList = List.of("A", "B", "C");
+     /*   List<String> stringList = List.of("A", "B", "C");
         List<Integer> intList = List.of(1, 2, 3);
 
         List<?> unknownTypeList1 = stringList;
@@ -21,7 +21,7 @@ public class CollectionsGenericDemo {
 
         List<? super Integer> list = new ArrayList<Number>();
         list.add(1);
-        list.add(2);
+        list.add(2);*/
      }
 
     private static void print(List<?> list) {

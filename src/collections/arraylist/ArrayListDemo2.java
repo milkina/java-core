@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ArrayListDemo2 {
     public static void main(String[] args) {
-        List<String> arrayList1 = new ArrayList<>();
+        /*List<String> arrayList1 = new ArrayList<>();
         List<String> arrayList2 = List.of("1", "2");
 
         arrayList1.add("A");
@@ -20,6 +20,6 @@ public class ArrayListDemo2 {
         System.out.println("arrayList1 после добавления " + arrayList1);
 
         arrayList1.clear();
-        System.out.println("arrayList1 после очистки " + arrayList1);
+        System.out.println("arrayList1 после очистки " + arrayList1);*/
     }
 }

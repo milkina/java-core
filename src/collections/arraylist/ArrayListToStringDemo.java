@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ArrayListToStringDemo {
     public static void main(String[] args) {
-        List<String> arrayList = List.of("C", "A", "E", "B", "D", "F");
+       /* List<String> arrayList = List.of("C", "A", "E", "B", "D", "F");
         //1 вариант
         Object[] objectArray = arrayList.toArray();
         System.out.println(Arrays.toString(objectArray));
@@ -17,6 +17,6 @@ public class ArrayListToStringDemo {
 
         //3 вариант
         String[] stringArray2 = arrayList.toArray(new String[0]);
-        System.out.println(Arrays.toString(stringArray2));
+        System.out.println(Arrays.toString(stringArray2));*/
     }
 }
