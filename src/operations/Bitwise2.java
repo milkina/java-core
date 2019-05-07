@@ -8,6 +8,6 @@ public class Bitwise2 {
         b = (byte) (a << 2); //0000 0000
         System.out.println("a = " + a);
         System.out.println("i = " + i);
-        System.out.println("publicVar = " + b);
+        System.out.println("b = " + b);
     }
 }

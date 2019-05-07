@@ -20,7 +20,7 @@ public class VarArgs2 {
     }
 
     static void test(int a) {
-        System.out.println("test(int defaultVar)");
+        System.out.println("test(int a)");
     }
 
     public static void main(String[] args) {

@@ -9,10 +9,10 @@ public class Bitwise1 {
         int e = a ^ b;
         int f = ~b;
         System.out.println("a = " + Integer.toBinaryString(a));
-        System.out.println("publicVar = " + Integer.toBinaryString(b));
-        System.out.println("a | publicVar = " + Integer.toBinaryString(c));
-        System.out.println("a & publicVar = " + Integer.toBinaryString(d));
-        System.out.println("a ^ publicVar = " + Integer.toBinaryString(e));
-        System.out.println("~ publicVar = " + Integer.toBinaryString(f));
+        System.out.println("b = " + Integer.toBinaryString(b));
+        System.out.println("a | b = " + Integer.toBinaryString(c));
+        System.out.println("a & b = " + Integer.toBinaryString(d));
+        System.out.println("a ^ b = " + Integer.toBinaryString(e));
+        System.out.println("~ b = " + Integer.toBinaryString(f));
     }
 }

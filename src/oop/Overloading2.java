@@ -11,7 +11,7 @@ public class Overloading2 {
     }*/
 
     double test(double a) {
-        System.out.println("double defaultVar: " + a);
+        System.out.println("double a: " + a);
         return a * a;
     }
 

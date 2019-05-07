@@ -2,11 +2,11 @@ package oop;
 
 public class Overloading1 {
     void test(int a) {
-        System.out.println("defaultVar: " + a);
+        System.out.println("a: " + a);
     }
 
     void test(int a, int b) {
-        System.out.println("defaultVar и publicVar: " + a + " " + b);
+        System.out.println("a и b: " + a + " " + b);
     }
 
     public static void main(String[] args) {

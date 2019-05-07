@@ -10,6 +10,6 @@ public class ChangeValues1 {
         b = tmp;
 
         System.out.println("a = " + a);
-        System.out.println("publicVar = " + b);
+        System.out.println("b = " + b);
     }
 }
