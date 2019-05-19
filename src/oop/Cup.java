@@ -1,14 +1,14 @@
 package oop;
 
 public class Cup {
-    private Spoon spoon;
+    Spoon spoon;
 
-    public Cup(Spoon spoon) {
+    Cup(Spoon spoon) {
         this.spoon = spoon;
     }
 
     @Override
-    protected void finalize()  {
+    protected void finalize() {
         System.out.println("Чашка исчезает навсегда");
     }
 
@@ -16,5 +16,5 @@ public class Cup {
         Cup cup = new Cup(new Spoon());
         cup = null;
         System.gc();
-     }
+    }
 }

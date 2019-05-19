@@ -5,6 +5,6 @@ public class BallDemo {
         Ball ball1 = new Ball("красный");
         Ball ball2 = new Ball("голубой");
         System.out.println("Количество созданных объектов: "
-                + Ball.getCount());
+                + Ball.count);
     }
 }
