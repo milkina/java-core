@@ -10,17 +10,27 @@ public class SerializeCat {
     private static final String FILE_NAME = "testSer.ser";
 
     public static void main(String[] args) {
-        Cat c = new Cat("Барсик");
-        try (FileOutputStream fs = new FileOutputStream(FILE_NAME);
-             ObjectOutputStream os = new ObjectOutputStream(fs)) {
-            os.writeObject(c);
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+        serialize();
+        Cat cat = deserialize();
+    }
+
+    private static Cat deserialize() {
+        Cat cat = null;
         try (FileInputStream fis = new FileInputStream(FILE_NAME);
              ObjectInputStream ois = new ObjectInputStream(fis)) {
-            c = (Cat) ois.readObject();
+            cat = (Cat) ois.readObject();
         } catch (IOException | ClassNotFoundException e) {
+            System.out.println(e.getMessage());
+        }
+        return cat;
+    }
+
+    private static void serialize() {
+        Cat cat = new Cat("Барсик");
+        try (FileOutputStream fs = new FileOutputStream(FILE_NAME);
+             ObjectOutputStream os = new ObjectOutputStream(fs)) {
+            os.writeObject(cat);
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
