@@ -1,7 +1,7 @@
 package oop;
 
 public class ColorBox extends Box6 {
-    String color;
+    public String color;
 
     public ColorBox(int width, int height, int depth, String color) {
         this.width = width;
