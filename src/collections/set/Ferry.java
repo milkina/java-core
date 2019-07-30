@@ -22,7 +22,7 @@ public class Ferry {
         System.out.println("Первый паром после 20:00 - " + tailSet.first());
         System.out.println();
 
-        // Java 6 версия исполтзует новые методы lower() и higher()
+        // Java 6 версия использует новые методы lower() и higher()
         System.out.println("Java 6");
         System.out.println("Последний паром перед 16:00 - " + times.lower(1600));
         System.out.println("Первый паром после 20:00 - " + times.higher(2000));
