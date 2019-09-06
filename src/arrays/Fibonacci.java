@@ -2,8 +2,6 @@ package arrays;
 
 import java.time.Duration;
 import java.time.LocalTime;
-import java.time.Period;
-import java.util.stream.LongStream;
 
 public class Fibonacci {
     public static void main(String[] args) {
@@ -21,6 +19,12 @@ public class Fibonacci {
         System.out.println(", время выполнения - " + duration2);
     }
 
+    /**
+     * Сложность О(n)
+     *
+     * @param n
+     * @return
+     */
     private static long calculateWithFor(int n) {
         long first = 0;
         long second = 1;
@@ -33,6 +37,12 @@ public class Fibonacci {
         return result;
     }
 
+    /**
+     * Сложность О(2^n)
+     *
+     * @param n
+     * @return
+     */
     private static long recursive(int n) {
         if (n <= 1) {
             return n;
