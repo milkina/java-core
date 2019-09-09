@@ -1,4 +1,4 @@
-package arrays;
+package algoritms;
 
 public class SelectionSorter {
     public static void sort(int[] array) {

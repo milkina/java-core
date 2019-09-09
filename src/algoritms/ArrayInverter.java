@@ -1,4 +1,4 @@
-package arrays;
+package algoritms;
 
 public class ArrayInverter {
     public static void invert(int[] array) {

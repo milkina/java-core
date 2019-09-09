@@ -1,4 +1,4 @@
-package arrays;
+package algoritms;
 
 import java.time.Duration;
 import java.time.LocalTime;
