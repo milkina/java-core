@@ -2,6 +2,7 @@ package oop;
 
 public class StaticMethodDemo {
     public static void main(String[] args) {
-        StaticMethod.staticMethod(42);
+        StaticMethodClass.staticMethod(42);
+        System.out.println(StaticMethodClass.staticVar);
     }
 }

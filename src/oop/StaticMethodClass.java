@@ -1,6 +1,6 @@
 package oop;
 
-public class StaticMethod {
+public class StaticMethodClass {
     static int staticVar = 3;
     int nonStaticVar;
 
@@ -19,7 +19,7 @@ public class StaticMethod {
         staticMethod(42);
         //Нельзя обратиться к нестатическому методу без указания объекта
         //nonStaticMethod();
-        StaticMethod useStatic = new StaticMethod();
+        StaticMethodClass useStatic = new StaticMethodClass();
         useStatic.nonStaticMethod();
         useStatic.staticMethod(67);
     }
