@@ -8,7 +8,8 @@ public class FindAreas2 {
         figures[1] = new Rectangle2(10, 10);
         figures[2] = new Triangle2(10, 10);
         for (Figure2 figure : figures) {
-            figure.area();
+            double area = figure.calculateArea();
+            System.out.println(area);
         }
     }
 }

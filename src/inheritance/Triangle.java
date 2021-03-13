@@ -1,12 +1,12 @@
 package inheritance;
 
 public class Triangle extends Figure {
-    public Triangle(double dim1, double dim2) {
-        super(dim1, dim2);
+    public Triangle(double dimension1, double dimension2) {
+        super(dimension1, dimension2);
     }
 
-    public double area() {
+    public double calculateArea() {
         System.out.println("B области треугольника.");
-        return dim1 * dim2 / 2;
+        return dimension1 * dimension2 / 2;
     }
 }

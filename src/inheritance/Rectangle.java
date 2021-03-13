@@ -1,12 +1,12 @@
 package inheritance;
 
 public class Rectangle extends Figure {
-    public Rectangle(double dim1, double dim2) {
-        super(dim1, dim2);
+    public Rectangle(double dimension1, double dimension2) {
+        super(dimension1, dimension2);
     }
 
-    public double area() {
+    public double calculateArea() {
         System.out.println("B области четырехугольника.");
-        return dim1 * dim2;
+        return dimension1 * dimension2;
     }
 }
