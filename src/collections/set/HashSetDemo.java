@@ -5,14 +5,14 @@ import java.util.Set;
 
 public class HashSetDemo {
     public static void main(String[] args) {
-        Set<String> hashSet = new HashSet<>();
+        Set<String> set = new HashSet<>();
 
-        hashSet.add("Харьков");
-        hashSet.add("Киев");
-        hashSet.add("Львов");
-        hashSet.add("Кременчуг");
-        hashSet.add("Харьков");
+        set.add("Харьков");
+        set.add("Киев");
+        set.add("Львов");
+        set.add("Кременчуг");
+        set.add("Харьков");
 
-        System.out.println(hashSet);
+        System.out.println(set);
     }
 }

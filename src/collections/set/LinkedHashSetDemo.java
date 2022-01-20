@@ -5,14 +5,14 @@ import java.util.Set;
 
 public class LinkedHashSetDemo {
     public static void main(String[] args) {
-        Set<String> linkedHashSet = new LinkedHashSet<>();
+        Set<String> set = new LinkedHashSet<>();
 
-        linkedHashSet.add("Харьков");
-        linkedHashSet.add("Киев");
-        linkedHashSet.add("Львов");
-        linkedHashSet.add("Кременчуг");
-        linkedHashSet.add("Харьков");
+        set.add("Харьков");
+        set.add("Киев");
+        set.add("Львов");
+        set.add("Кременчуг");
+        set.add("Харьков");
 
-        System.out.println(linkedHashSet);
+        System.out.println(set);
     }
 }

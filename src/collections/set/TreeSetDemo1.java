@@ -5,14 +5,14 @@ import java.util.TreeSet;
 
 public class TreeSetDemo1 {
     public static void main(String[] args) {
-        SortedSet<String> treeSet = new TreeSet<>();
+        SortedSet<String> set = new TreeSet<>();
 
-        treeSet.add("Харьков");
-        treeSet.add("Киев");
-        treeSet.add("Львов");
-        treeSet.add("Кременчуг");
-        treeSet.add("Харьков");
+        set.add("Харьков");
+        set.add("Киев");
+        set.add("Львов");
+        set.add("Кременчуг");
+        set.add("Харьков");
 
-        System.out.println(treeSet);
+        System.out.println(set);
     }
 }

@@ -5,22 +5,22 @@ import java.util.TreeSet;
 
 public class TreeSetDemo2 {
     public static void main(String[] args) {
-        SortedSet<String> treeSet = new TreeSet<>();
+        SortedSet<String> set = new TreeSet<>();
 
-        treeSet.add("Харьков");
-        treeSet.add("Киев");
-        treeSet.add("Львов");
-        treeSet.add("Кременчуг");
-        treeSet.add("Харьков");
+        set.add("Харьков");
+        set.add("Киев");
+        set.add("Львов");
+        set.add("Кременчуг");
+        set.add("Харьков");
 
-        System.out.println(treeSet);
+        System.out.println(set);
 
-        SortedSet<String> subSet = treeSet.subSet("Киев", "Львов");
+        SortedSet<String> subSet = set.subSet("Киев", "Львов");
         System.out.println("SubSet: " + subSet);
 
-        System.out.println("HeadSet: " + treeSet.headSet("Львов"));
-        System.out.println("TailSet: " + treeSet.tailSet("Львов"));
-        System.out.println("Первый элемент: " + treeSet.first());
-        System.out.println("Последний элемент: " + treeSet.last());
+        System.out.println("HeadSet: " + set.headSet("Львов"));
+        System.out.println("TailSet: " + set.tailSet("Львов"));
+        System.out.println("Первый элемент: " + set.first());
+        System.out.println("Последний элемент: " + set.last());
     }
 }
