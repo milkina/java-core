@@ -18,6 +18,6 @@ public class Array1 {
         monthDays[9] = 31;
         monthDays[10] = 30;
         monthDays[11] = 31;
-        System.out.println("B апреле " + monthDays[3] + " дней.");
+        System.out.println("B мае " + monthDays[5] + " дней.");
     }
 }
