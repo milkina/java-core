@@ -1,9 +1,11 @@
-package collections;
+package collections.map;
+
+import collections.Product;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class ProductKeyDemo {
+public class ProductKeyExample1 {
     public static void main(String[] args) {
         Map<Product, String> map = new HashMap<>();
         Product doll = new Product("Кукла", 534, "Украина");

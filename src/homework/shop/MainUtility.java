@@ -1,6 +1,6 @@
 package homework.shop;
 
-public class UserUtility {
+public class MainUtility {
     private static User ann = new User("ann", "annpass");
     private static User john = new User("john", "johnpass");
     private static User[] users = new User[10];
@@ -30,5 +30,32 @@ public class UserUtility {
         users[userCount++] = user;
         System.out.println("Создан новый пользователь.");
         return user;
+    }
+
+    public static void printCatalogs(Category[] categories) {
+        for (int i = 0; i < categories.length; i++) {
+            System.out.println("Catalog " + (i + 1) + ": " + categories[i].getName());
+        }
+    }
+
+    public static void printCatalog(int i, Category[] categories) {
+        Category category = categories[--i];
+        printProducts(category);
+        System.out.println();
+    }
+
+    public static void printProducts(Category category) {
+        Product[] products = category.getProducts();
+        for (int i = 0; i < products.length; i++) {
+            System.out.println("Product " + (i + 1) + ": " + products[i].getName());
+        }
+    }
+
+    public static void buyProducts(User user) {
+        if (user == null) {
+            System.out.println("Пользователь должен залогиниться.");
+        } else {
+            user.bought();
+        }
     }
 }

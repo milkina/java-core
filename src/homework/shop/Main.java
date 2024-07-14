@@ -3,7 +3,8 @@ package homework.shop;
 import java.util.Scanner;
 
 public class Main {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
+    private static User user = null;
 
     public static void main(String[] args) {
 
@@ -21,59 +22,96 @@ public class Main {
         Category shoes = new Category("Shoes", shoesProducts);
         Category[] categories = new Category[]{clothes, shoes};
 
-        UserOperation userOperation;
+        UserOperation userOperation = null;
+
         do {
-            System.out.println("Введите: LOGIN -, EXIT - для выхода из программы.");
+            System.out.println("Введите:\nLOGIN - для аутентификации,\n" +
+                    "SHOW_CATALOGS_LIST - для просмотра списка каталогов товаров,\n" +
+                    "SHOW_PRODUCTS_LIST - для просмотра списка товаров определенного каталога,\n" +
+                    "ADD_PRODUCT - для добавления продукта в корзину\n" +
+                    "BUY_PRODUCTS - для покупки,\n" +
+                    "EXIT - для выхода из программы.");
             String operationString = scanner.nextLine();
-            userOperation = UserOperation.valueOf(operationString);
-            switch (userOperation) {
-                case LOGIN:
-                    login();
-                    break;
+
+            try {
+                userOperation = UserOperation.valueOf(operationString);
+                selectOperation(userOperation, categories);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Некорректно введено значение");
             }
         } while (userOperation != UserOperation.EXIT);
-
-        /*ann.bought(new Product[]{clothProducts[0]});
-        john.bought(new Product[]{shoesProducts[1], clothProducts[1]});
-
-        System.out.println("Catalog of products");
-        printCatalog(categories);
-
-        System.out.println("Ann bought:");
-        printBasketProducts(ann);
-
-        System.out.println("John bought:");
-        printBasketProducts(john);*/
     }
 
-    private static void login() {
+    private static void selectOperation(UserOperation userOperation, Category[] categories) {
+
+        switch (userOperation) {
+            case LOGIN:
+                user = login();
+                break;
+            case SHOW_CATALOGS_LIST:
+                MainUtility.printCatalogs(categories);
+                break;
+            case SHOW_PRODUCTS_LIST:
+                showProductsList(categories);
+                break;
+            case ADD_PRODUCT:
+                addProduct(categories);
+                break;
+            case BUY_PRODUCTS:
+                MainUtility.buyProducts(user);
+                break;
+        }
+    }
+
+    private static User login() {
         System.out.println("Введите логин: ");
         String login = scanner.nextLine();
 
         System.out.println("Введите пароль: ");
         String password = scanner.nextLine();
 
-        UserUtility.login(login, password);
+        return MainUtility.login(login, password);
     }
 
-    private static void printCatalog(Category[] categories) {
-        for (Category category : categories) {
-            System.out.println("Catalog " + category.getName() + ":");
-            printProducts(category);
-            System.out.println();
+    private static void addProduct(Category[] categories) {
+        if (user == null) {
+            System.out.println("Пользователь должен залогиниться.");
+        } else {
+            System.out.println("Введите номер каталога");
+            int catalogNumber = getEnteredNumber();
+            if (catalogNumber >= categories.length) {
+                System.out.println("Нет такого каталога.");
+                return;
+            }
+            System.out.println("Введите номер продукта");
+            int productNumber = getEnteredNumber();
+            Product[] products = categories[catalogNumber - 1].getProducts();
+            if (productNumber >= products.length) {
+                System.out.println("Нет такого продукта.");
+                return;
+            }
+
+            user.addProduct(products[productNumber - 1]);
+            System.out.println("Продукт добавлен в корзину.");
         }
     }
 
-    private static void printProducts(Category category) {
-        for (Product product : category.getProducts()) {
-            System.out.println("Product " + product.getName());
-        }
+    public static void showProductsList(Category[] categories) {
+        System.out.println("Введите номер каталога.");
+        int i = getEnteredNumber();
+        MainUtility.printCatalog(i, categories);
     }
 
-    private static void printBasketProducts(User user) {
-        for (Product product : user.getBasket().getProducts()) {
-            System.out.println(product.getName());
-        }
-        System.out.println();
+    private static int getEnteredNumber() {
+        int i;
+        while (true)
+            if (scanner.hasNextInt()) {
+                i = scanner.nextInt();
+                scanner.nextLine();
+                break;
+            } else {
+                System.out.println("Некорректный ввод.");
+            }
+        return i;
     }
 }

@@ -37,7 +37,12 @@ public class User {
         this.basket = basket;
     }
 
-    public void bought(Product[] products) {
-        basket.setProducts(products);
+    public void bought() {
+        basket.printProducts();
+        basket.initializeProducts();
+    }
+
+    public void addProduct(Product product) {
+        basket.addProduct(product);
     }
 }

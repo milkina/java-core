@@ -4,22 +4,17 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import static java.util.Arrays.asList;
-
-public class IteratorDemo {
+public class ConcurrentModificationExceptionDemo {
     public static void main(String[] args) {
         List<String> arrayList = new ArrayList<>();
         arrayList.add("C");
         arrayList.add("A");
         arrayList.add("E");
-        arrayList.add("B");
-        arrayList.add("D");
-        arrayList.add("F");
-
         Iterator<String> iterator = arrayList.iterator();
+        arrayList.add("R");
+
         while (iterator.hasNext()) {
-            String element = iterator.next();
-            System.out.print(element + " ");
+               System.out.println(iterator.next()); //ConcurrentModificationException
         }
     }
 }

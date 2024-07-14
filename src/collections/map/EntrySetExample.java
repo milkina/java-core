@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class HashMapDemo {
+public class EntrySetExample {
     public static void main(String[] args) {
         Map<String, Double> hashMap = new HashMap<>();
 
@@ -12,7 +12,10 @@ public class HashMapDemo {
         hashMap.put("Петров", 123.22);
         hashMap.put("Сидоров", 1378.00);
 
-        System.out.println("Количество элементов: "
-                + hashMap.size());
+        Set<Map.Entry<String, Double>> entries = hashMap.entrySet();
+        for (Map.Entry<String, Double> entry : entries) {
+            System.out.print("Ключ: " + entry.getKey());
+            System.out.println(" Значение: " + entry.getValue());
+        }
     }
 }

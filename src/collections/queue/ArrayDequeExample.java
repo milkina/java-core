@@ -11,10 +11,12 @@ public class ArrayDequeExample {
         stack.push("B");
         stack.push("C");
         stack.push("D");
+        System.out.print("Stack: ");
         while (!stack.isEmpty()) {
             System.out.print(stack.pop() + " ");
         }
         System.out.println();
+        System.out.print("Queue: ");
 
         queue.offer("A");
         queue.offer("B");

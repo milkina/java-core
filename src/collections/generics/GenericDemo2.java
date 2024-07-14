@@ -10,18 +10,20 @@ public class GenericDemo2 {
     public static void main(String[] args) {
         List<Box6> boxes = new ArrayList<>();
         List<HeavyBox> heavyBoxes = new ArrayList<>();
-        addBox(boxes);
-        addBox(heavyBoxes);
+        addHeavyBox(boxes);
+        addHeavyBox(heavyBoxes);
 
         System.out.println(boxes);
+        System.out.println(boxes.get(0));
         System.out.println(heavyBoxes);
     }
 
-    public static void addBox(List<? super HeavyBox> list) {
+    public static void addHeavyBox(List<? super HeavyBox> list) {
         list.add(new HeavyBox());
     }
 
    /* public static <T> T getBox(List<? super T> list) {
+        list.get(0);
         return list.get(0);
     }*/
 }

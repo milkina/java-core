@@ -18,8 +18,7 @@ public class GenericDemo1 {
         iDouble.add(5.7);
         iDouble.add(8.3);
         iDouble.add(9.2);
-        //Ошибка компиляции -  List<Integer> iList=iDouble;
-        // System.out.println(getAverage(iDouble));
+        System.out.println(getAverage(iDouble));
     }
 
     public static Number getAverage(List<? extends Number> list) {
@@ -29,7 +28,6 @@ public class GenericDemo1 {
             result += d.doubleValue();
         }
         average = result / list.size();
-        //  list.add(average);
         return average;
     }
 }

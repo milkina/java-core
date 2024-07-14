@@ -14,6 +14,9 @@ public class ListIteratorDemo {
             listIterator.set(element + "+");
         }
 
+        System.out.print("Измененный arrayList: ");
+        System.out.println(arrayList);
+
         System.out.print("Измененный arrayList в обратном порядке: ");
         while (listIterator.hasPrevious()) {
             String element = listIterator.previous();

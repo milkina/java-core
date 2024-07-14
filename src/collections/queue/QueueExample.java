@@ -12,6 +12,7 @@ public class QueueExample {
         queue.offer("Львов");
 
         System.out.println(queue.peek());
+        System.out.println();
 
         String town;
         while ((town = queue.poll()) != null) {
