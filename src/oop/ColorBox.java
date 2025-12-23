@@ -1,6 +1,6 @@
 package oop;
 
-public class ColorBox extends Box6 {
+public class ColorBox extends Box {
     public String color;
 
     public ColorBox(int width, int height, int depth, String color) {

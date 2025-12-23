@@ -1,6 +1,6 @@
 package homework.shop;
 
-import java.util.Scanner;
+import java.util.*;
 
 public class Main {
     private static final Scanner scanner = new Scanner(System.in);
@@ -8,19 +8,28 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Product[] clothProducts = new Product[3];
-        clothProducts[0] = new Product("jeans", 30, 5);
-        clothProducts[1] = new Product("jumper", 40, 4);
-        clothProducts[2] = new Product("shirt", 50, 3);
+        Map<String, Product> clothProducts = new TreeMap<>();
+        Product jeans = new Product("jeans", 30, 5);
+        Product jumper = new Product("jumper", 40, 4);
+        Product shirt = new Product("shirt", 50, 3);
 
-        Product[] shoesProducts = new Product[3];
-        shoesProducts[0] = new Product("boots", 20, 5);
-        shoesProducts[1] = new Product("sneakers", 15, 5);
-        shoesProducts[2] = new Product("sandals", 50, 3);
+        clothProducts.put(jeans.getName(), jeans);
+        clothProducts.put(jumper.getName(), jumper);
+        clothProducts.put(shirt.getName(), shirt);
+
+        Map<String, Product> shoesProducts = new TreeMap<>();
+        Product boots = new Product("boots", 20, 5);
+        Product sneakers = new Product("sneakers", 15, 5);
+        Product sandals = new Product("sandals", 50, 3);
+        shoesProducts.put(boots.getName(), boots);
+        shoesProducts.put(sneakers.getName(), sneakers);
+        shoesProducts.put(sandals.getName(), sandals);
 
         Category clothes = new Category("Clothes", clothProducts);
         Category shoes = new Category("Shoes", shoesProducts);
-        Category[] categories = new Category[]{clothes, shoes};
+        Map<String, Category> categories = new HashMap<>();
+        categories.put(clothes.getName(), clothes);
+        categories.put(shoes.getName(), shoes);
 
         UserOperation userOperation = null;
 
@@ -42,8 +51,7 @@ public class Main {
         } while (userOperation != UserOperation.EXIT);
     }
 
-    private static void selectOperation(UserOperation userOperation, Category[] categories) {
-
+    private static void selectOperation(UserOperation userOperation, Map<String, Category> categories) {
         switch (userOperation) {
             case LOGIN:
                 user = login();
@@ -73,33 +81,33 @@ public class Main {
         return MainUtility.login(login, password);
     }
 
-    private static void addProduct(Category[] categories) {
+    private static void addProduct(Map<String, Category> categories) {
         if (user == null) {
             System.out.println("Пользователь должен залогиниться.");
         } else {
-            System.out.println("Введите номер каталога");
-            int catalogNumber = getEnteredNumber();
-            if (catalogNumber >= categories.length) {
+            System.out.println("Введите имя каталога");
+            String catalogName = scanner.nextLine();
+            if (!categories.containsKey(catalogName)) {
                 System.out.println("Нет такого каталога.");
                 return;
             }
-            System.out.println("Введите номер продукта");
-            int productNumber = getEnteredNumber();
-            Product[] products = categories[catalogNumber - 1].getProducts();
-            if (productNumber >= products.length) {
+            System.out.println("Введите имя продукта");
+            String productName = scanner.nextLine();
+            Map<String, Product> products = categories.get(catalogName).getProducts();
+            if (!products.containsKey(productName)) {
                 System.out.println("Нет такого продукта.");
                 return;
             }
 
-            user.addProduct(products[productNumber - 1]);
+            user.addProduct(products.get(productName));
             System.out.println("Продукт добавлен в корзину.");
         }
     }
 
-    public static void showProductsList(Category[] categories) {
-        System.out.println("Введите номер каталога.");
-        int i = getEnteredNumber();
-        MainUtility.printCatalog(i, categories);
+    public static void showProductsList(Map<String, Category> categories) {
+        System.out.println("Введите имя каталога.");
+        String catalogName = scanner.nextLine();
+        MainUtility.printCatalog(catalogName, categories);
     }
 
     private static int getEnteredNumber() {

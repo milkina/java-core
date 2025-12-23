@@ -1,54 +1,49 @@
 package homework.shop;
 
-public class MainUtility {
-    private static User ann = new User("ann", "annpass");
-    private static User john = new User("john", "johnpass");
-    private static User[] users = new User[10];
+import java.util.*;
 
-    private static int userCount;
+public class MainUtility {
+    private static final User ann = new User("ann", "annpass");
+    private static final User john = new User("john", "johnpass");
+    private static Set<User> users = new HashSet<>();
 
     static {
-        users[0] = ann;
-        users[1] = john;
-
-        userCount = 2;
+        users.add(ann);
+        users.add(john);
     }
 
     public static User login(String login, String password) {
-        for (int i = 0; i < userCount; i++) {
-            if (users[i].getLogin().equals(login)
-                    && users[i].getPassword().equals(password)) {
+        for (User user : users) {
+            if (user.getLogin().equals(login)
+                    && user.getPassword().equals(password)) {
                 System.out.println("Пользователь залогинен.");
-                return users[i];
-            } else if (users[i].getLogin().equals(login)
-                    && !users[i].getPassword().equals(password)) {
+                return user;
+            } else if (user.getLogin().equals(login)
+                    && !user.getPassword().equals(password)) {
                 System.out.println("Неправильный пароль.");
                 return null;
             }
         }
         User user = new User(login, password);
-        users[userCount++] = user;
+        users.add(user);
         System.out.println("Создан новый пользователь.");
         return user;
     }
 
-    public static void printCatalogs(Category[] categories) {
-        for (int i = 0; i < categories.length; i++) {
-            System.out.println("Catalog " + (i + 1) + ": " + categories[i].getName());
-        }
+    public static void printCatalogs(Map<String, Category> categories) {
+        categories.keySet().forEach(System.out::println);
     }
 
-    public static void printCatalog(int i, Category[] categories) {
-        Category category = categories[--i];
+    public static void printCatalog(String catalogName, Map<String, Category> categories) {
+        Category category = categories.get(catalogName);
         printProducts(category);
         System.out.println();
     }
 
     public static void printProducts(Category category) {
-        Product[] products = category.getProducts();
-        for (int i = 0; i < products.length; i++) {
-            System.out.println("Product " + (i + 1) + ": " + products[i].getName());
-        }
+        Map<String, Product> products = category.getProducts();
+        Set<Product> set = new TreeSet<>(products.values());
+        set.forEach(product -> System.out.println("Product " + product));
     }
 
     public static void buyProducts(User user) {

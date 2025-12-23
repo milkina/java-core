@@ -2,9 +2,9 @@ package oop;
 
 public class DifferentBoxDemo2 {
     public static void main(String[] args) {
-        Box6 box = new Box6(15, 10, 25);
-        Box6 heavyBox = new HeavyBox(15, 10, 20, 5);
-        Box6 redBox = new ColorBox(25, 12, 20, "красный");
+        Box box = new Box(15, 10, 25);
+        Box heavyBox = new HeavyBox(15, 10, 20, 5);
+        Box redBox = new ColorBox(25, 12, 20, "красный");
 
         ColorBox blueBox = new ColorBox(25, 12, 20, "голубой");
 

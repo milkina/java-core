@@ -1,9 +1,9 @@
 package inheritance;
 
-import oop.Box6;
+import oop.Box;
 
 public class R {
-    Box6 getInstance() {
-        return new Box6();
+    Box getInstance() {
+        return new Box();
     }
 }

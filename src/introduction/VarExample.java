@@ -1,11 +1,11 @@
 package introduction;
 
-public class VarDemo {
+public class VarExample {
     String str1 = "Hello!";
     String str2 = "Hi!";
 
     public static void main(String[] args) {
-        int x; // переменная x доступна всему коду из метода main ( )
+        int x; // переменная x доступна всему коду в методе main
         x = 10;
         if (x == 10) { // начало новой области действия,
             int y = 20;
@@ -20,5 +20,8 @@ public class VarDemo {
         // в этой области действия
         // переменная х доступна и эдесь
         System.out.println(" x равно " + x);
+    }
+    static void doSomething(int y){
+        int z;
     }
 }

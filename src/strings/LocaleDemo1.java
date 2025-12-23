@@ -6,7 +6,7 @@ public class LocaleDemo1 {
     public static void main(String[] args) {
         Locale fr = Locale.FRANCE;
         Locale us = Locale.US;
-        Locale uk = new Locale("uk", "UA");
+        Locale uk = Locale.of("uk", "UA");
 
         Locale.setDefault(Locale.CANADA);
         Locale current = Locale.getDefault();

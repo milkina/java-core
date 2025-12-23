@@ -1,6 +1,6 @@
 package collections.generics;
 
-import oop.Box6;
+import oop.Box;
 import oop.HeavyBox;
 
 import java.util.ArrayList;
@@ -8,7 +8,7 @@ import java.util.List;
 
 public class GenericDemo2 {
     public static void main(String[] args) {
-        List<Box6> boxes = new ArrayList<>();
+        List<Box> boxes = new ArrayList<>();
         List<HeavyBox> heavyBoxes = new ArrayList<>();
         addHeavyBox(boxes);
         addHeavyBox(heavyBoxes);

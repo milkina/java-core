@@ -6,7 +6,7 @@ public class TestDemo {
      *
      * @param o
      */
-    static void changeObject(Box6 o) {
+    static void changeObject(Box o) {
         o.width *= 2;
         o.height /= 2;
         o.depth += 2;
@@ -24,7 +24,7 @@ public class TestDemo {
     }
 
     public static void main(String[] args) {
-        Box6 box = new Box6(5, 6, 7);
+        Box box = new Box(5, 6, 7);
 
         int x = 10;
         int y = 10;
