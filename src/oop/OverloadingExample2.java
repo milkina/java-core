@@ -1,6 +1,6 @@
 package oop;
 
-public class Overloading2 {
+public class OverloadingExample2 {
     void test() {
         System.out.println("Без параметров");
     }
@@ -16,7 +16,7 @@ public class Overloading2 {
     }
 
     public static void main(String[] args) {
-        Overloading2 ob = new Overloading2();
+        OverloadingExample2 ob = new OverloadingExample2();
 
         ob.test();
         double result = ob.test(123.25);

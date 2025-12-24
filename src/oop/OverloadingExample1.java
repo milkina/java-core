@@ -1,6 +1,6 @@
 package oop;
 
-public class Overloading1 {
+public class OverloadingExample1 {
     void test(int a) {
         System.out.println("a: " + a);
     }
@@ -10,7 +10,7 @@ public class Overloading1 {
     }
 
     public static void main(String[] args) {
-        Overloading1 ob = new Overloading1();
+        OverloadingExample1 ob = new OverloadingExample1();
 
         ob.test(10);
         ob.test(10, 20);
